@@ -1,78 +1,20 @@
 /* @license Copyright 2023 @polkadot-cloud/recipes authors & contributors
 SPDX-License-Identifier: GPL-3.0-only */
 
-import { JSX, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Grid, Card, Polkicon } from "@polkadot-cloud/react";
-import {
-  GridJustify,
-  GridSizes,
-  GridItemsAlignment,
-} from "@polkadot-cloud/react/base/types";
+import { GridSizes } from "@polkadot-cloud/react/base/types";
 import { valEmpty } from "@polkadot-cloud/react/utils";
 import { ellipsisFn } from "@polkadot-cloud/utils";
 import {
-  HPositionLR,
   HPosition,
   ComponentBaseWithClassName,
 } from "@polkadot-cloud/react/utils/types";
 
 // eslint-disable-next-line import/no-unresolved
 import "./index.css";
-
-type FontType =
-  | "xx-small"
-  | "x-small"
-  | "small"
-  | "medium"
-  | "large"
-  | "larger"
-  | "x-large"
-  | "xx-large";
-
-interface AccountCardProps {
-  title: TitleProps;
-  fontSize?: FontType | string;
-  ellipsis?: EllipsisProps;
-  icon?: IconProps;
-  extraComponent?: ExtraComponentProps;
-  noCard?: boolean;
-}
-
-export interface IconProps extends CommonParams, ComponentBaseWithClassName {
-  size?: number;
-  copy?: boolean;
-  position?: HPositionLR;
-  colors?: string[];
-  outerColor?: string;
-  dark?: boolean;
-}
-
-export interface ExtraComponentProps
-  extends CommonParams,
-    ComponentBaseWithClassName {
-  component?: JSX.Element;
-  position?: HPositionLR;
-}
-
-export interface EllipsisProps {
-  active?: boolean;
-  amount?: number;
-  position?: string;
-}
-
-interface CommonParams {
-  gridSize?: GridSizes;
-  justify?: GridJustify;
-}
-
-export interface TitleProps extends ComponentBaseWithClassName {
-  address: string;
-  align?: GridItemsAlignment;
-  justify?: GridJustify;
-  component?: JSX.Element;
-  name?: string;
-}
+import { AccountCardProps, FontType } from "./types";
 
 const isOfFontType = (input: string): input is FontType => {
   return [
