@@ -32,5 +32,7 @@ jobs:
       - name: Publish Package From Build
         if: steps.check_new_version_build.outputs.is-new-version == 'true'
         run: npm publish
+        with:
+          path: "./dist"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
