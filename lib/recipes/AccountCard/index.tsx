@@ -3,8 +3,12 @@ SPDX-License-Identifier: GPL-3.0-only */
 
 import { JSX, useEffect, useState } from "react";
 
-import { Grid, Card } from "@polkadot-cloud/react";
-import { GridJustify, GridSizes, GridItemsAlignment } from "@polkadot-cloud/react/base/types";
+import { Grid, Card, Polkicon } from "@polkadot-cloud/react";
+import {
+  GridJustify,
+  GridSizes,
+  GridItemsAlignment,
+} from "@polkadot-cloud/react/base/types";
 import { valEmpty } from "@polkadot-cloud/react/utils";
 import { ellipsisFn } from "@polkadot-cloud/utils";
 import {
@@ -13,9 +17,8 @@ import {
   ComponentBaseWithClassName,
 } from "@polkadot-cloud/react/utils/types";
 
-import { Polkicon } from "@polkadot-cloud/react";
-
-import "./index.css"
+// eslint-disable-next-line import/no-unresolved
+import "./index.css";
 
 type FontType =
   | "xx-small"

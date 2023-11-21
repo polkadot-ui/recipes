@@ -2,18 +2,18 @@
 SPDX-License-Identifier: GPL-3.0-only */
 /* eslint-disable @typescript-eslint/no-var-requires */
 
-import pkg from 'gulp';
+import pkg from "gulp";
 const { src, dest, series } = pkg;
 import ts from "gulp-typescript";
 import strip from "gulp-strip-comments";
 import sourcemaps from "gulp-sourcemaps";
 import merge from "merge-stream";
 import refresh from "gulp-livereload";
-import lrserver  from "tiny-lr";
+import lrserver from "tiny-lr";
 
 import gulpSass from "gulp-sass";
 import * as sass from "sass";
-    
+
 const sass_f = gulpSass(sass);
 
 const SASS_OPTIONS = { outputStyle: "compressed" };
@@ -42,4 +42,9 @@ const licenseAndReadme = () => {
   return src(["LICENSE", "README.npm.md"]).pipe(dest("dist"));
 };
 
-export default series(buildCss, buildComponents, stripComments, licenseAndReadme);
+export default series(
+  buildCss,
+  buildComponents,
+  stripComments,
+  licenseAndReadme
+);
