@@ -20,7 +20,6 @@
 
 **Functional React Recipes for Polkadot dapps.**
 
-
 ## Docs
 
 - [Polkadot Cloud Docs: Installation](https://polkadot.cloud/polkicon): Install and start using `@polkadot‑cloud/recipes`.
