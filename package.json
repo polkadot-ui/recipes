@@ -2,6 +2,7 @@
   "name": "polkadot-cloud-recipes",
   "license": "GPL-3.0-only",
   "version": "0.0.3",
+  "private": "true",
   "type": "module",
   "contributors": [
     "Ross Bulat<ross@parity.io>",
@@ -16,16 +17,18 @@
     "UI"
   ],
   "bugs": {
-    "url": "https://github.com/polkadot-cloud/polkadot-cloud/issues"
+    "url": "https://github.com/polkadot-cloud/recipes/issues"
   },
-  "homepage": "https://github.com/polkadot-cloud/polkadot-cloud#readme",
+  "homepage": "https://github.com/polkadot-cloud/recipes#readme",
   "scripts": {
     "build:mock": "node ./scripts/generatePackageJson.mjs -p cloud-recipes -m index.js",
     "prebuild": "node ./scripts/prebuild.mjs",
     "build": "rm -fr dist && gulp && mv dist/README.npm.md dist/README.md",
     "postbuild": "node ./scripts/postbuild.mjs",
     "lint": "eslint './**' --fix && npx prettier --write . && npx stylelint '**/*.scss' --fix",
-    "clear": "rm -rf node_modules dist tsconfig.tsbuildinfo"
+    "clear": "rm -rf node_modules dist tsconfig.tsbuildinfo",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "prettier": {
     "arrowParens": "always",
@@ -74,6 +77,14 @@
     "@polkadot/keyring": "^12.6.1",
     "@polkadot/util": "^12.5.1",
     "@polkadot/util-crypto": "^12.5.1",
+    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-interactions": "^7.5.3",
+    "@storybook/addon-links": "^7.5.3",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.5.3",
+    "@storybook/react": "^7.5.3",
+    "@storybook/react-vite": "^7.5.3",
+    "@storybook/testing-library": "^0.2.2",
     "@types/react": "^18.2.38",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
@@ -90,6 +101,7 @@
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-storybook": "^0.6.15",
     "eslint-plugin-unused-imports": "^3.0.0",
     "framer-motion": "^10.16.5",
     "gulp": "^4.0.2",
@@ -107,7 +119,9 @@
     "react-error-boundary": "^4.0.11",
     "react-qr-reader": "^2.2.1",
     "sass": "^1.69.5",
+    "storybook": "^7.5.3",
     "stylelint-config-standard-scss": "^11.1.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vite": "^5.0.2"
   }
 }
