@@ -1,7 +1,6 @@
 // Copyright 2023 @polkadot-cloud/recipes authors & contributors
 // SPDX-License-Identifier: GPL-3.0-only
 
-import { join } from "path";
 import {
   addTypescriptPropertiesIfMain,
   allPropertiesExist,
@@ -18,7 +17,6 @@ import {
   writePackageJsonToOutput,
 } from "../utils.mjs";
 import {
-  PACKAGE_OUTPUT,
   PACKAGE_REQUIRED_FILES,
   PACKAGE_REQUIRED_JSON_KEYS,
   PACKAGE_REQUIRED_SCRIPTS,
@@ -75,7 +73,7 @@ export const build = async ({ p: packageName, m: main }) => {
 
     // Full package directory path.
     // ----------------------------
-    const packagePath = join(getPackagesDirectory(), packageName);
+    const packagePath = "."; //join(getPackagesDirectory(), packageName);
 
     // Source package.json as a parsed JSON object.
     // ----------------------------------------------
@@ -117,12 +115,6 @@ export const build = async ({ p: packageName, m: main }) => {
 export const postbuild = async () => {
   try {
     const packages = await getPackages();
-
-    // Check the correct output folder exists in each package.
-    // -------------------------------------------------------
-    if (!(await checkFilesExistInPackages(packages, [PACKAGE_OUTPUT]))) {
-      throw `❌ ${PACKAGE_OUTPUT} folder missing for package.`;
-    }
 
     for (let pkg of packages) {
       // Read and parse package.json file.

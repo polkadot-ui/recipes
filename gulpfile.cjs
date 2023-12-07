@@ -22,7 +22,7 @@ const buildComponents = () => {
 
   return merge(tsResult, tsResult.js)
     .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("dist"));
+    .pipe(dest("dist"));
 };
 
 const buildCss = () => {
@@ -39,7 +39,7 @@ const replaceCss = () => {
 };
 
 const stripComments = () => {
-  return src("dist/**/*.js").pipe(strip()).pipe(gulp.dest("dist"));
+  return src("dist/**/*.js").pipe(strip()).pipe(dest("dist"));
 };
 
 const licenseAndReadme = () => {
