@@ -12,9 +12,7 @@ import {
 import type { AnyJson } from "@polkadot-cloud/react/utils/types";
 import type { SelectItemsProps } from "./types";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Connect/SelectItems/index.css";
-// eslint-disable-next-line import/no-unresolved
-import "./index.css";
+import "./index.scss";
 
 export const SelectItems = ({ layout, children }: SelectItemsProps) => {
   // Initialise refs for container and body of items.

@@ -8,13 +8,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
 
 import {
+  Button,
   ModalConnectItem,
   ModalHardwareItem,
-  Button,
 } from "@polkadot-cloud/react";
 import { PolkadotVault } from "@polkadot-cloud/assets/extensions/jsx/PolkadotVault";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Connect/index.css";
+import "./index.scss";
 
 export const Vault = (): ReactElement => {
   const { replaceModal } = useOverlay().modal;

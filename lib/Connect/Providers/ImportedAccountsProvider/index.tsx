@@ -7,7 +7,7 @@ import { createContext, useContext } from "react";
 import type { ExternalAccount } from "@polkadot-cloud/react/connect/types";
 import type { MaybeAddress } from "@polkadot-cloud/react/utils/types";
 import { ManualSigners } from "../../Utils";
-import { useExtensionAccounts } from "@polkadot-cloud/react/hooks";
+import { useExtensionAccounts } from "@polkadot-cloud/react/connect/ExtensionAccountsProvider/useExtensionAccounts";
 import { defaultImportedAccountsContext } from "./defaults";
 import type { ImportedAccountsContextInterface } from "./types";
 import { useOtherAccounts } from "../OtherAccountsProvider";

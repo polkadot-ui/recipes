@@ -2,23 +2,29 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
 import { faChevronLeft, faLinkSlash } from "@fortawesome/free-solid-svg-icons";
+// import {
+//   ActionItem,
+//   ButtonPrimaryInvert,
+//   ButtonText,
+//   ModalCustomHeader,
+//   ModalPadding,
+// } from "@polkadot-cloud/react";
+import { Fragment, useEffect, useState } from "react";
+
 import {
   ActionItem,
-  Button,
-  ModalCustomHeader,
+  useEffectIgnoreInitial,
   ModalPadding,
+  ModalCustomHeader,
+  Button,
 } from "@polkadot-cloud/react";
-import { Fragment, useEffect, useState } from "react";
 
 // TODO: No idea what to do
 // import { useBalances } from "contexts/Balances";
 // import { useBonded } from "contexts/Bonded";
 
 import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
-import {
-  useExtensions,
-  useEffectIgnoreInitial,
-} from "@polkadot-cloud/react/hooks";
+import { useExtensions } from "@polkadot-cloud/react/connect/ExtensionsProvider/useExtensions";
 
 // import { usePoolMemberships } from "contexts/Pools/PoolMemberships";
 import { useProxies } from "../../Providers/ProxiesProvider";
@@ -33,10 +39,7 @@ import type {
   AccountNotStaking,
 } from "./types";
 
-// eslint-disable-next-line import/no-unresolved
-import "./index.css";
-
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Accounts/index.css";
+import "./index.scss";
 
 // TODO: Fix many API things
 

@@ -1,20 +1,11 @@
-import { Overlays } from "./Overlays";
-import { useActiveAccounts } from "./Providers/ActiveAccountsProvider";
-import { ConnectConfigProvider } from "./Providers/ConnectConfigProvider";
-import {
+export { Overlays } from "./Overlays";
+export { useActiveAccounts } from "./Providers/ActiveAccountsProvider";
+export { ConnectConfigProvider } from "./Providers/ConnectConfigProvider";
+export {
   connectInfo,
   ConnectProvider as Connect,
 } from "./Providers/ConnectProvider";
-import type {
+export type {
   ConnectType,
   DappInfo,
 } from "./Providers/ConnectConfigProvider/types";
-
-export {
-  ConnectConfigProvider,
-  connectInfo,
-  Connect,
-  Overlays,
-  useActiveAccounts,
-};
-export type { ConnectType, DappInfo };

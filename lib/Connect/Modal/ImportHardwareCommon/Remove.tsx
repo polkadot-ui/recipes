@@ -6,10 +6,7 @@ import { usePrompt } from "../../Providers/PromptProvider";
 import { useOtherAccounts } from "../../Providers/OtherAccountsProvider";
 import type { RemoveProps } from "./types";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/ImportHardwareCommon/index.css";
-
-// eslint-disable-next-line import/no-unresolved
-import "./index.css";
+import "./index.scss";
 
 export const Remove = ({ address, getHandler, removeHandler }: RemoveProps) => {
   const { setStatus } = usePrompt();

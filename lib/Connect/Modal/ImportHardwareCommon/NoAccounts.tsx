@@ -7,10 +7,7 @@ import { Button } from "@polkadot-cloud/react";
 import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
 import { Any } from "@polkadot-cloud/react/utils/types";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/ImportHardwareCommon/index.css";
-
-// eslint-disable-next-line import/no-unresolved
-import "./index.css";
+import "./index.scss";
 
 export const NoAccounts = ({ children, text, Icon }: Any) => {
   const { replaceModal } = useOverlay().modal;

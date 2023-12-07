@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
 import { Any } from "@polkadot-cloud/react/utils/types";
-import { Button } from "@polkadot-cloud/react/";
+import { Button } from "@polkadot-cloud/react";
 import { isValidAddress } from "@polkadot-cloud/utils";
 import { useEffect, useState } from "react";
 import { useVaultHardware } from "../../Providers/HardwareProviders/Vault";

@@ -17,9 +17,6 @@ import { Manage } from "./Manage";
 import { Splash } from "./Splash";
 import { useConnectConfig } from "../../Providers/ConnectConfigProvider";
 
-// eslint-disable-next-line import/no-unresolved
-import "./index.css";
-
 export const ImportLedger = () => {
   const { network } = useConnectConfig();
   const { setModalResize } = useOverlay().modal;

@@ -15,7 +15,7 @@ import {
 } from "@polkadot-cloud/utils";
 import { useRef, useState, ReactNode, createContext, useContext } from "react";
 import { isSupportedProxy } from "./proxies";
-import { useEffectIgnoreInitial } from "@polkadot-cloud/react/hooks";
+import { useEffectIgnoreInitial } from "@polkadot-cloud/react";
 import { useActiveAccounts } from "../ActiveAccountsProvider";
 import { useImportedAccounts } from "../ImportedAccountsProvider";
 import { useOtherAccounts } from "../OtherAccountsProvider";

@@ -49,22 +49,6 @@ export const ConnectConfigProvider = ({
     setSs58(dappInfo.ss58);
   }, [dappInfo]);
 
-  console.log(
-    "---- ",
-    JSON.stringify(
-      "hardwareActive: " +
-        hardwareActive +
-        " _ " +
-        webActive +
-        " _ " +
-        devActive +
-        " _ " +
-        readOnlyActive +
-        " _ " +
-        proxiesActive
-    )
-  );
-
   return (
     <ConnectConfigContext.Provider
       value={{

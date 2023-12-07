@@ -10,14 +10,12 @@ import {
   ModalPadding,
   ModalSection,
   ModalCustomHeader,
+  useEffectIgnoreInitial,
 } from "@polkadot-cloud/react";
 
 import { ExtensionsArray } from "@polkadot-cloud/assets/extensions";
 import { useEffect, useRef, useState } from "react";
-import {
-  useEffectIgnoreInitial,
-  useExtensions,
-} from "@polkadot-cloud/react/hooks";
+import { useExtensions } from "@polkadot-cloud/react/connect/ExtensionsProvider/useExtensions";
 import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
 
 import { SelectItems } from "./SelectItems";
@@ -33,10 +31,7 @@ window.Buffer = Buffer;
 
 import { useConnectConfig } from "../../Providers/ConnectConfigProvider";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Connect/index.css";
-
-// eslint-disable-next-line import/no-unresolved
-import "./index.css";
+import "./index.scss";
 
 export const Connect = () => {
   const { wallets } = useConnectConfig();
@@ -222,7 +217,10 @@ export const Connect = () => {
                   <div className="extensions-wrapper">
                     <SelectItems layout="two-col">
                       {installed.concat(other).map((extension, i) => (
-                        <Extension key={i} meta={extension} />
+                        <Extension
+                          key={`extension_item_${i}`}
+                          meta={extension}
+                        />
                       ))}
                     </SelectItems>
                   </div>
@@ -234,7 +232,10 @@ export const Connect = () => {
                   <div className="extensions-wrapper">
                     <SelectItems layout="two-col">
                       {pjs.map((extension, i) => (
-                        <Extension key={i} meta={extension} />
+                        <Extension
+                          key={`extension_item_${i}`}
+                          meta={extension}
+                        />
                       ))}
                     </SelectItems>
                   </div>

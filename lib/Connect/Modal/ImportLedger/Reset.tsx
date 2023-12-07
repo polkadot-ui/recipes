@@ -12,7 +12,7 @@ import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOve
 import { useOtherAccounts } from "../../Providers/OtherAccountsProvider";
 import type { LedgerAccount } from "@polkadot-cloud/react/connect/types";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/ImportLedger/index.css";
+import "./index.scss";
 
 export const Reset = ({ removeLedgerAddress }: AnyJson) => {
   const { setStatus } = usePrompt();

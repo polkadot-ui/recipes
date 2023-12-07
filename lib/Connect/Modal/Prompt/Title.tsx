@@ -3,13 +3,13 @@
 
 import type { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button } from "@polkadot-cloud/react/";
+import { Button } from "@polkadot-cloud/react";
 import type { FunctionComponent } from "react";
 
 import { usePrompt } from "../../Providers/PromptProvider";
 import { Any } from "@polkadot-cloud/react/utils/types";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Prompt/index.css";
+import "./index.scss";
 
 interface TitleProps {
   title: string;

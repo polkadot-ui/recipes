@@ -8,7 +8,7 @@ import { useBonded } from "../BondedProvider";
 // import { useStaking } from "../Staking";
 // import { useTransferOptions } from "../TransferOptions";
 import type { AnyJson, MaybeAddress } from "@polkadot-cloud/react/utils/types";
-import { useEffectIgnoreInitial } from "@polkadot-cloud/react/hooks";
+import { useEffectIgnoreInitial } from "@polkadot-cloud/react";
 import { useActiveAccounts } from "../ActiveAccountsProvider";
 import { useImportedAccounts } from "../ImportedAccountsProvider";
 import * as defaults from "./defaults";

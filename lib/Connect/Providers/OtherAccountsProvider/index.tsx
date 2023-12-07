@@ -5,10 +5,8 @@ import type { ReactNode } from "react";
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { useEffectIgnoreInitial } from "@polkadot-cloud/react";
 
-import {
-  useExtensions,
-  useExtensionAccounts,
-} from "@polkadot-cloud/react/hooks";
+import { useExtensions } from "@polkadot-cloud/react/connect/ExtensionsProvider/useExtensions";
+import { useExtensionAccounts } from "@polkadot-cloud/react/connect/ExtensionAccountsProvider/useExtensionAccounts";
 
 import {
   getLocalLedgerAccounts,

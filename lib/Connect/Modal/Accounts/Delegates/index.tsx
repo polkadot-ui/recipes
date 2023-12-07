@@ -6,10 +6,7 @@ import { useImportedAccounts } from "../../../Providers/ImportedAccountsProvider
 import { AccountButton } from "../Account";
 import type { DelegatesProps } from "../types";
 
-// eslint-disable-next-line import/no-unresolved
-import "./index.css";
-
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Accounts/Delegates/index.css";
+import "./index.scss";
 
 export const Delegates = ({ delegates, delegator }: DelegatesProps) => {
   const { accounts } = useImportedAccounts();
@@ -31,7 +28,7 @@ export const Delegates = ({ delegates, delegator }: DelegatesProps) => {
         <div className="delegates-wrapper">
           {delegatesList.map(({ delegate, proxyType }, i) => (
             <AccountButton
-              key={i}
+              key={`_del_${i}`}
               address={delegate}
               delegator={delegator}
               proxyType={proxyType}
