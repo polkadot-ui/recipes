@@ -62,7 +62,7 @@ export const AccountInput = ({
     }
     // check address already imported
     const alreadyImported = accounts.find(
-      (a) => a.address.toUpperCase() === newValue.toUpperCase()
+      (a) => a.address.toUpperCase() === newValue.toUpperCase(),
     );
     if (alreadyImported !== undefined && disallowAlreadyImported) {
       setValid("already_imported");

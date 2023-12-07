@@ -19,5 +19,13 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
   },
-  "include": ["./lib/**/*"],
+  "include": [
+    "./lib/**/*",
+    "./scripts/**/*"
+  ],
+  "exclude": [
+    "./gulpfile.cjs",
+    "./plugins/rollup-plugin-remove-lines.mjs",
+    "./tsup.config.ts"
+  ]
 }

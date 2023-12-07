@@ -51,5 +51,5 @@ exports.default = series(
   buildCss,
   replaceCss,
   stripComments,
-  licenseAndReadme
+  licenseAndReadme,
 );

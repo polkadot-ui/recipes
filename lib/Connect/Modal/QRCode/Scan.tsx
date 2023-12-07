@@ -24,12 +24,12 @@ const Scan = ({
 
   const onErrorCallback = useCallback(
     (error: Error) => onError(error),
-    [onError]
+    [onError],
   );
 
   const onScanCallback = useCallback(
     (data: string | null) => data && onScan(data),
-    [onScan]
+    [onScan],
   );
 
   return (

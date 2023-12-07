@@ -20,8 +20,8 @@ export const generateExportEntries = async ({ ignore }) => {
   ];
   await Promise.all(
     pathsToRemove.map(({ path, options }) =>
-      existsSync(path) ? fs.rm(path, options) : Promise.resolve()
-    )
+      existsSync(path) ? fs.rm(path, options) : Promise.resolve(),
+    ),
   );
 
   // Iterates through a provided directory and returns all component paths.
@@ -58,7 +58,7 @@ export const generateExportEntries = async ({ ignore }) => {
   // Construct entry files.
   await writeFormattedFile(
     "./lib/index.tsx",
-    generateExportLines(components, "./")
+    generateExportLines(components, "./"),
   );
 };
 
@@ -70,7 +70,7 @@ const generateExportLines = (items, basePath) =>
         `export { ${item.export} } from "${basePath}${item.from
           .split("/")
           .slice(2)
-          .join("/")}";`
+          .join("/")}";`,
     )
     .join("\n");
 

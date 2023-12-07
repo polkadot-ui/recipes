@@ -76,7 +76,7 @@ export const TxMetaProvider = ({ children }: { children: ReactNode }) => {
         uid,
       },
       setTxPayloadState,
-      txPayloadRef
+      txPayloadRef,
     );
   };
 
@@ -101,7 +101,7 @@ export const TxMetaProvider = ({ children }: { children: ReactNode }) => {
 
   const controllerSignerAvailable = (
     stash: MaybeAddress,
-    proxySupported: boolean
+    proxySupported: boolean,
   ) => {
     const controller = getBondedAccount(stash);
 
@@ -146,7 +146,7 @@ export const TxMetaProvider = ({ children }: { children: ReactNode }) => {
 };
 
 export const TxMetaContext = createContext<TxMetaContextInterface>(
-  defaults.defaultTxMeta
+  defaults.defaultTxMeta,
 );
 
 export const useTxMeta = () => useContext(TxMetaContext);

@@ -11,7 +11,7 @@ const main = async () => {
     (error, _, stderr) => {
       error && console.log(`❌: ${error.message}`);
       stderr && console.log(`❌: ${stderr}`);
-    }
+    },
   );
 
   // Remove generated content.

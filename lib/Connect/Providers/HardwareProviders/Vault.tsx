@@ -24,14 +24,14 @@ export const VaultHardwareProvider = ({
   const { network } = useConnectConfig();
 
   const [vaultAccounts, seVaultAccountsState] = useState<VaultAccount[]>(
-    getLocalVaultAccounts(network)
+    getLocalVaultAccounts(network),
   );
   const vaultAccountsRef = useRef(vaultAccounts);
 
   // Check if a Vault address exists in imported addresses.
   const vaultAccountExists = (address: string) =>
     !!getLocalVaultAccounts().find((a) =>
-      isLocalNetworkAddress(network, a, address)
+      isLocalNetworkAddress(network, a, address),
     );
 
   // Adds a vault account to state and local storage.
@@ -52,14 +52,14 @@ export const VaultHardwareProvider = ({
       newVaultAccounts = [...newVaultAccounts].concat(account);
       localStorage.setItem(
         "polkadot_vault_accounts",
-        JSON.stringify(newVaultAccounts)
+        JSON.stringify(newVaultAccounts),
       );
 
       // store only those accounts on the current network in state.
       setStateWithRef(
         newVaultAccounts.filter((a) => a.network === network),
         seVaultAccountsState,
-        vaultAccountsRef
+        vaultAccountsRef,
       );
       return account;
     }
@@ -84,13 +84,13 @@ export const VaultHardwareProvider = ({
     } else {
       localStorage.setItem(
         "polkadot_vault_accounts",
-        JSON.stringify(newVaultAccounts)
+        JSON.stringify(newVaultAccounts),
       );
     }
     setStateWithRef(
       newVaultAccounts.filter((a) => a.network === network),
       seVaultAccountsState,
-      vaultAccountsRef
+      vaultAccountsRef,
     );
   };
 
@@ -101,7 +101,7 @@ export const VaultHardwareProvider = ({
     }
     return (
       localVaultAccounts.find((a) =>
-        isLocalNetworkAddress(network, a, address)
+        isLocalNetworkAddress(network, a, address),
       ) ?? null
     );
   };
@@ -115,16 +115,16 @@ export const VaultHardwareProvider = ({
             ...a,
             name: newName,
           }
-        : a
+        : a,
     );
     localStorage.setItem(
       "polkadot_vault_accounts",
-      JSON.stringify(newVaultAccounts)
+      JSON.stringify(newVaultAccounts),
     );
     setStateWithRef(
       newVaultAccounts.filter((a) => a.network === network),
       seVaultAccountsState,
-      vaultAccountsRef
+      vaultAccountsRef,
     );
   };
 
@@ -133,7 +133,7 @@ export const VaultHardwareProvider = ({
     setStateWithRef(
       getLocalVaultAccounts(network),
       seVaultAccountsState,
-      vaultAccountsRef
+      vaultAccountsRef,
     );
   }, [network]);
 

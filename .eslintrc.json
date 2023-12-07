@@ -1,28 +1,71 @@
 {
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "sourceType": "module",
+    "ecmaVersion": "latest",
+    "ecmaFeatures": {
+      "jsx": true,
+      "arrowFunctions": true
+    }
+  },
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": [
+          "tsconfig.json",
+          "packages/*/tsconfig.json",
+          "app/tsconfig.json"
+        ]
+      }
     }
   },
-  "extends": ["../../.eslintrc.json", "plugin:react/recommended"],
-  "plugins": ["react", "@typescript-eslint", "prefer-arrow-functions"],
+  "extends": [
+    "plugin:import/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prefer-arrow-functions",
+    "@typescript-eslint",
+    "import",
+    "unused-imports"
+  ],
   "rules": {
+    "import/no-named-as-default": "off",
+    "import/no-named-as-default-member": "off",
+    "import/no-unresolved": "error",
+    "unused-imports/no-unused-imports": "error",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
     "react/jsx-filename-extension": [
       "warn",
       {
         "extensions": [".tsx"]
       }
     ],
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "ts": "never",
-        "tsx": "never"
-      }
-    ],
     "no-shadow": "off",
-    "import/no-named-as-default-member": "off",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-shadow": ["error"],
     "prefer-arrow-functions/prefer-arrow-functions": [

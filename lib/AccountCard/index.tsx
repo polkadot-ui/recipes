@@ -113,7 +113,7 @@ export const AccountCard = ({
   const [mainSize, setMainSize] = useState<GridSizes>(12);
   // state xtraSize (extra component's Grid column size)
   const [xtraSize, setXtraSize] = useState<GridSizes | undefined>(
-    extraComponent?.gridSize
+    extraComponent?.gridSize,
   );
 
   // Adjust the columns
@@ -176,7 +176,7 @@ export const AccountCard = ({
                 whiteSpace: "nowrap",
                 overflow: "hidden",
               }
-            : {}
+            : {},
         )}
         className={`${title?.className} ${fontClasses
           ?.filter((a) => a.trim() != "")
@@ -187,7 +187,7 @@ export const AccountCard = ({
             ? ellipsisFn(
                 title?.name || title.address,
                 ellipsis.amount,
-                (ellipsis?.position as HPosition) || "center"
+                (ellipsis?.position as HPosition) || "center",
               )
             : title?.name || title.address)}
       </div>

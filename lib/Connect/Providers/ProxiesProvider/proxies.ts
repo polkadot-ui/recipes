@@ -48,7 +48,7 @@ export const isSupportedProxy = (proxy: string) =>
 export const isSupportedProxyCall = (
   proxy: string,
   pallet: string,
-  method: string
+  method: string,
 ) => {
   if ([method, pallet].includes("undefined")) {
     return false;

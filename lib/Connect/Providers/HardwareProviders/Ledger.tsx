@@ -88,7 +88,7 @@ export const LedgerHardwareProvider = ({
   const { network } = useConnectConfig();
 
   const [ledgerAccounts, setLedgerAccountsState] = useState<LedgerAccount[]>(
-    getLocalLedgerAccounts(network)
+    getLocalLedgerAccounts(network),
   );
   const ledgerAccountsRef = useRef(ledgerAccounts);
 
@@ -127,7 +127,7 @@ export const LedgerHardwareProvider = ({
     setStateWithRef(
       getLocalLedgerAccounts(network),
       setLedgerAccountsState,
-      ledgerAccountsRef
+      ledgerAccountsRef,
     );
   }, [network]);
 
@@ -194,7 +194,7 @@ export const LedgerHardwareProvider = ({
       setTimeout(async () => {
         ledgerTransport.current?.device?.close();
         reject(Error("Timeout"));
-      }, millis)
+      }, millis),
     );
     return Promise.race([promise, timeout]);
   };
@@ -237,7 +237,7 @@ export const LedgerHardwareProvider = ({
   const executeLedgerLoop = async (
     appName: string,
     tasks: LedgerTask[],
-    options?: AnyJson
+    options?: AnyJson,
   ) => {
     try {
       // do not execute again if already in progress.
@@ -299,8 +299,8 @@ export const LedgerHardwareProvider = ({
         LEDGER_DEFAULT_ACCOUNT + index,
         LEDGER_DEFAULT_CHANGE,
         LEDGER_DEFAULT_INDEX + 0,
-        false
-      )
+        false,
+      ),
     );
 
     await ledgerTransport.current?.device?.close();
@@ -329,7 +329,7 @@ export const LedgerHardwareProvider = ({
     appName: string,
     uid: number,
     index: number,
-    payload: AnyJson
+    payload: AnyJson,
   ) => {
     const substrateApp = newSubstrateApp(ledgerTransport.current, appName);
     const { deviceModel } = ledgerTransport.current;
@@ -350,7 +350,7 @@ export const LedgerHardwareProvider = ({
       LEDGER_DEFAULT_ACCOUNT + index,
       LEDGER_DEFAULT_CHANGE,
       LEDGER_DEFAULT_INDEX + 0,
-      u8aToBuffer(payload.toU8a(true))
+      u8aToBuffer(payload.toU8a(true)),
     );
 
     feedBackMsg("signedTransactionSuccessfully");
@@ -390,14 +390,14 @@ export const LedgerHardwareProvider = ({
   // Check if a Ledger address exists in imported addresses.
   const ledgerAccountExists = (address: string) =>
     !!getLocalLedgerAccounts().find((a) =>
-      isLocalNetworkAddress(network, a, address)
+      isLocalNetworkAddress(network, a, address),
     );
 
   const addLedgerAccount = (address: string, index: number) => {
     let newLedgerAccounts = getLocalLedgerAccounts();
 
     const ledgerAddress = getLocalLedgerAddresses().find((a) =>
-      isLocalNetworkAddress(network, a, address)
+      isLocalNetworkAddress(network, a, address),
     );
 
     if (
@@ -416,14 +416,14 @@ export const LedgerHardwareProvider = ({
       newLedgerAccounts = [...newLedgerAccounts].concat(account);
       localStorage.setItem(
         "ledger_accounts",
-        JSON.stringify(newLedgerAccounts)
+        JSON.stringify(newLedgerAccounts),
       );
 
       // store only those accounts on the current network in state.
       setStateWithRef(
         newLedgerAccounts.filter((a) => a.network === network),
         setLedgerAccountsState,
-        ledgerAccountsRef
+        ledgerAccountsRef,
       );
 
       return account;
@@ -448,13 +448,13 @@ export const LedgerHardwareProvider = ({
     } else {
       localStorage.setItem(
         "ledger_accounts",
-        JSON.stringify(newLedgerAccounts)
+        JSON.stringify(newLedgerAccounts),
       );
     }
     setStateWithRef(
       newLedgerAccounts.filter((a) => a.network === network),
       setLedgerAccountsState,
-      ledgerAccountsRef
+      ledgerAccountsRef,
     );
   };
 
@@ -467,7 +467,7 @@ export const LedgerHardwareProvider = ({
     }
     return (
       localLedgerAccounts.find((a) =>
-        isLocalNetworkAddress(network, a, address)
+        isLocalNetworkAddress(network, a, address),
       ) ?? null
     );
   };
@@ -482,14 +482,14 @@ export const LedgerHardwareProvider = ({
             ...a,
             name: newName,
           }
-        : a
+        : a,
     );
     renameLocalLedgerAddress(address, newName);
     localStorage.setItem("ledger_accounts", JSON.stringify(newLedgerAccounts));
     setStateWithRef(
       newLedgerAccounts.filter((a) => a.network === network),
       setLedgerAccountsState,
-      ledgerAccountsRef
+      ledgerAccountsRef,
     );
   };
 
@@ -503,7 +503,7 @@ export const LedgerHardwareProvider = ({
         : {
             ...i,
             name,
-          }
+          },
     );
 
     if (localLedger) {

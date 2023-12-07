@@ -37,7 +37,7 @@ export const getLocalLedgerAddresses = (network?: string) => {
   const localAddresses = localStorageOrDefault(
     "ledger_addresses",
     [],
-    true
+    true,
   ) as LedgerAddress[];
 
   return network
@@ -50,7 +50,7 @@ export const getLocalLedgerAccounts = (network?: string) => {
   const localAddresses = localStorageOrDefault(
     "ledger_accounts",
     [],
-    true
+    true,
   ) as LedgerAccount[];
 
   return network
@@ -63,7 +63,7 @@ export const getLocalVaultAccounts = (network?: string) => {
   const localAddresses = localStorageOrDefault(
     "polkadot_vault_accounts",
     [],
-    true
+    true,
   ) as VaultAccount[];
 
   return network
@@ -75,5 +75,5 @@ export const getLocalVaultAccounts = (network?: string) => {
 export const isLocalNetworkAddress = (
   chain: string,
   a: { address: MaybeString; network: string },
-  address: string
+  address: string,
 ) => a.address === address && a.network === chain;

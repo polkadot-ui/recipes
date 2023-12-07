@@ -29,9 +29,9 @@ export const checkFilesExistInPackages = async (pkgs, files) => {
             console.error(`❌ ${file} not found in ${pkg}`);
             allFilesExist = false;
           }
-        })
+        }),
       );
-    })
+    }),
   );
   return allFilesExist;
 };
@@ -102,8 +102,8 @@ export const getSourcePackageJson = async (path) => {
 export const getDistPackageJson = async (path) => {
   return JSON.parse(
     await fs.readFile(
-      `${getPackagesDirectory()}/${path}/${PACKAGE_OUTPUT}/package.json`
-    )
+      `${getPackagesDirectory()}/${path}/${PACKAGE_OUTPUT}/package.json`,
+    ),
   );
 };
 
@@ -116,7 +116,7 @@ export const allPropertiesExist = (obj, properties) => {
 export const getPackageScripts = async (pkg) => {
   const file = await fs.readFile(
     `${getPackagesDirectory()}/${pkg}/package.json`,
-    "utf-8"
+    "utf-8",
   );
   return Object.keys(JSON.parse(file)?.scripts || {}) || {};
 };

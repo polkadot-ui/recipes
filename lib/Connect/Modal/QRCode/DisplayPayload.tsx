@@ -18,7 +18,7 @@ const DisplayPayload = ({
 }: DisplayPayloadProps): ReactElement<DisplayPayloadProps> | null => {
   const data = useMemo(
     () => createSignPayload(address, cmd, payload, genesisHash),
-    [address, cmd, payload, genesisHash]
+    [address, cmd, payload, genesisHash],
   );
 
   if (!data) {

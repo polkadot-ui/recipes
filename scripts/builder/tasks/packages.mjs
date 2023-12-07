@@ -34,14 +34,14 @@ export const prebuild = async () => {
     // -------------------------------------
     if (!(await checkFoldersInDirectory(getPackagesDirectory(), packages))) {
       throw `❌ Package directories missing. Must have ${packages.join(
-        ", "
+        ", ",
       )} directories`;
     }
 
     // Check required files exist for each package.
     if (!(await checkFilesExistInPackages(packages, PACKAGE_REQUIRED_FILES))) {
       throw `❌ Required files missing in packages. Must have ${PACKAGE_REQUIRED_FILES.join(
-        ", "
+        ", ",
       )} files`;
     }
 
@@ -51,11 +51,11 @@ export const prebuild = async () => {
       if (
         !allPropertiesExist(
           await getPackageScripts(pkg),
-          PACKAGE_REQUIRED_SCRIPTS
+          PACKAGE_REQUIRED_SCRIPTS,
         )
       ) {
         throw `❌ Missing script field(s) in package.json. Must have ${PACKAGE_REQUIRED_SCRIPTS.join(
-          ", "
+          ", ",
         )} properties`;
       }
     }
@@ -84,7 +84,7 @@ export const build = async ({ p: packageName, m: main }) => {
     // Required properties to be copied to the npm build package.json file.
     // --------------------------------------------------------------------
     const requiredProperties = Object.entries(sourcePackageJson).filter((k) =>
-      PACKAGE_REQUIRED_JSON_KEYS.includes(k[0])
+      PACKAGE_REQUIRED_JSON_KEYS.includes(k[0]),
     );
 
     //Inject formatted package `name` into required properties.

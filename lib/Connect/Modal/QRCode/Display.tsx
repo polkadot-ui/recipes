@@ -77,7 +77,7 @@ const Display = ({
         // set the new timer last
         timerRef.current.timerId = setTimeout(
           nextFrame,
-          timerRef.current.timerDelay
+          timerRef.current.timerDelay,
         );
 
         return newState;
@@ -85,7 +85,7 @@ const Display = ({
 
     timerRef.current.timerId = setTimeout(
       nextFrame,
-      timerRef.current.timerDelay
+      timerRef.current.timerDelay,
     );
 
     return () => {
