@@ -23,6 +23,15 @@
     "@polkadot/extension-inject" "^0.46.5"
     "@polkadot/types-augment" "^10.9.1"
 
+"@chainsafe/metamask-polkadot-adapter@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@chainsafe/metamask-polkadot-adapter/-/metamask-polkadot-adapter-0.6.0.tgz#6b11a4aca065ed77de15573c880fee50a637a3c0"
+  integrity sha512-/GYngaoKf6svvYDOvfxx7gK6cbPEYvOGv3HooCc8uGLAkpDZvs8SmLfx5k5s1PdDKyNfr9UB1x0TaNhE24PvqQ==
+  dependencies:
+    "@polkadot/api" "^10.9.1"
+    "@polkadot/extension-inject" "^0.46.5"
+    "@polkadot/types-augment" "^10.9.1"
+
 "@chainsafe/metamask-polkadot-types@^0.6.0":
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/@chainsafe/metamask-polkadot-types/-/metamask-polkadot-types-0.6.0.tgz#e6e950024c363e076ba6727c3b1b8b57eb6c29b0"

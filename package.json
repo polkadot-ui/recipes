@@ -35,7 +35,7 @@
     "singleQuote": false
   },
   "peerDependencies": {
-    "@chainsafe/metamask-polkadot-adapter": "^0.5.1",
+    "@chainsafe/metamask-polkadot-adapter": "^0.6.0",
     "@chainsafe/metamask-polkadot-types": "^0.6.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
@@ -59,7 +59,7 @@
     "react-qr-reader": "^2.2.1"
   },
   "devDependencies": {
-    "@chainsafe/metamask-polkadot-adapter": "^0.5.1",
+    "@chainsafe/metamask-polkadot-adapter": "^0.6.0",
     "@chainsafe/metamask-polkadot-types": "^0.6.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
