@@ -79,28 +79,28 @@
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.5.1.tgz#fdb1ec4952b689f5f7aa0bffe46180bb35490032"
   integrity sha512-GkWzv+L6d2bI5f/Vk6ikJ9xtl7dfXtoRu3YGE6nq0p/FFqA1ebMOAWg3XgRyb0I6LYyYkiAo+3/KrwuBp8xG7A==
 
-"@fortawesome/fontawesome-svg-core@^6.4.2":
+"@fortawesome/fontawesome-svg-core@^6.4.2", "@fortawesome/fontawesome-svg-core@^6.5.1":
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.5.1.tgz#9d56d46bddad78a7ebb2043a97957039fcebcf0a"
   integrity sha512-MfRCYlQPXoLlpem+egxjfkEuP9UQswTrlCOsknus/NcMoblTH2g0jPrapbcIb04KGA7E2GZxbAccGZfWoYgsrQ==
   dependencies:
     "@fortawesome/fontawesome-common-types" "6.5.1"
 
-"@fortawesome/free-brands-svg-icons@^6.4.2":
+"@fortawesome/free-brands-svg-icons@^6.4.2", "@fortawesome/free-brands-svg-icons@^6.5.1":
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-6.5.1.tgz#e948cc02404277cb8ad40fe3573ca75f2830e876"
   integrity sha512-093l7DAkx0aEtBq66Sf19MgoZewv1zeY9/4C7vSKPO4qMwEsW/2VYTUTpBtLwfb9T2R73tXaRDPmE4UqLCYHfg==
   dependencies:
     "@fortawesome/fontawesome-common-types" "6.5.1"
 
-"@fortawesome/free-regular-svg-icons@^6.4.2":
+"@fortawesome/free-regular-svg-icons@^6.4.2", "@fortawesome/free-regular-svg-icons@^6.5.1":
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-6.5.1.tgz#c98a91d2c9137ed54a7aa2362a916f46503e0627"
   integrity sha512-m6ShXn+wvqEU69wSP84coxLbNl7sGVZb+Ca+XZq6k30SzuP3X4TfPqtycgUh9ASwlNh5OfQCd8pDIWxl+O+LlQ==
   dependencies:
     "@fortawesome/fontawesome-common-types" "6.5.1"
 
-"@fortawesome/free-solid-svg-icons@^6.4.2":
+"@fortawesome/free-solid-svg-icons@^6.4.2", "@fortawesome/free-solid-svg-icons@^6.5.1":
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.5.1.tgz#737b8d787debe88b400ab7528f47be333031274a"
   integrity sha512-S1PPfU3mIJa59biTtXJz1oI0+KAXW6bkAb31XKhxdxtuXDiUIFsih4JR1v5BbxY7hVHsD1RKq+jRkVRaf773NQ==
@@ -167,7 +167,7 @@
   resolved "https://registry.yarnpkg.com/@ledgerhq/errors/-/errors-6.16.1.tgz#df650a9ba105397dee2e8c0ceddf6931c5b25ede"
   integrity sha512-4D4wKecGzQpIu7sx03Sg4uE1e8g1oZUndWgw9gw776H8h9ov9c5TxPaldTn2j6orPECAERViLf7LTO4L5pE2Cw==
 
-"@ledgerhq/hw-transport-webhid@^6.27.20", "@ledgerhq/hw-transport-webhid@^6.28.0":
+"@ledgerhq/hw-transport-webhid@^6.27.20":
   version "6.28.1"
   resolved "https://registry.yarnpkg.com/@ledgerhq/hw-transport-webhid/-/hw-transport-webhid-6.28.1.tgz#af13c517514451bf60ee83d8e2b402028504af5c"
   integrity sha512-m1FzUaaRdMm+KWz+sm4RGjG1axAIYEnIC3PqwFGMtXDjyPVohdWxRJD9B2L/etR4EY67b7AH/MoQ02rpUqCCEA==
@@ -247,31 +247,31 @@
   resolved "https://registry.yarnpkg.com/@polkadot-cloud/assets/-/assets-0.2.0.tgz#3907b2e93269b0c16e8ac60f243297a7a1ff271c"
   integrity sha512-4dXb4zFRJAZS4icxz1cPZN6mdlhZIfW81jGgAkv6zKuRhJ9lMZO248gnxf8hZnNUEOotXph9tTLynAdMf31Tag==
 
-"@polkadot-cloud/core@^1.0.48":
-  version "1.0.48"
-  resolved "https://registry.yarnpkg.com/@polkadot-cloud/core/-/core-1.0.48.tgz#aa04ff6a4b8a45d8c39dc3e232936299a44d85c7"
-  integrity sha512-YeYS6OR6AxVV0Y1+FFCy0mLeL+Xxn7siYXjNm6XtTrcna0kALnQTKM8udedawwkMJujMxhQhfSWVP8i1HQT6hw==
+"@polkadot-cloud/core@^1.0.48", "@polkadot-cloud/core@^1.0.52":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@polkadot-cloud/core/-/core-1.1.0.tgz#ac830cc5b6998aad29e6809dd766e00c0dd5a594"
+  integrity sha512-be4UNM5K4UDDfB46LW97vAGwtz8WYffM3hHy2FSWlcm3ZK/NP5TrudqCSXGtruQsxm6b7N7Bb79wa6gdruXyAQ==
 
-"@polkadot-cloud/react@^0.1.134":
-  version "0.1.137"
-  resolved "https://registry.yarnpkg.com/@polkadot-cloud/react/-/react-0.1.137.tgz#fc723f687829ee191981a522d1dba25e6f5f4d5c"
-  integrity sha512-O8d4KHtWFXxyvna7mZhTAHSKQvQ8eLMwbgNJ0ChaLs3iyxTLyIi8sjl/+11X4JTroBhvgSlQJATjjmO8iX7nQw==
+"@polkadot-cloud/react@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@polkadot-cloud/react/-/react-0.2.0.tgz#3dfbde49550a0d0cdc27bb5122baabb024852855"
+  integrity sha512-emc/ZqR3gjIfF3OZ/pDy+9aKIExLrDLJaD8qfBy6DeDMaA4pMbOwh92H8unkmtnIPOfycr3skWLG7djEgs0UPw==
   dependencies:
     "@chainsafe/metamask-polkadot-adapter" "^0.6.0"
     "@chainsafe/metamask-polkadot-types" "^0.6.0"
-    "@fortawesome/fontawesome-svg-core" "^6.4.2"
-    "@fortawesome/free-brands-svg-icons" "^6.4.2"
-    "@fortawesome/free-regular-svg-icons" "^6.4.2"
-    "@fortawesome/free-solid-svg-icons" "^6.4.2"
+    "@fortawesome/fontawesome-svg-core" "^6.5.1"
+    "@fortawesome/free-brands-svg-icons" "^6.5.1"
+    "@fortawesome/free-regular-svg-icons" "^6.5.1"
+    "@fortawesome/free-solid-svg-icons" "^6.5.1"
     "@fortawesome/react-fontawesome" "^0.2.0"
-    "@ledgerhq/hw-transport-webhid" "^6.28.0"
     "@polkadot-cloud/assets" "0.1.35"
-    "@polkadot-cloud/core" "^1.0.48"
-    "@polkadot-cloud/utils" "^0.0.25"
+    "@polkadot-cloud/core" "^1.0.52"
+    "@polkadot-cloud/utils" "^0.0.34"
     "@polkadot/keyring" "^12.6.1"
     "@polkadot/util" "^12.5.1"
     "@polkadot/util-crypto" "^12.5.1"
-    framer-motion "^10.16.5"
+    framer-motion "^10.16.16"
+    react-error-boundary "^4.0.12"
 
 "@polkadot-cloud/utils@^0.0.25":
   version "0.0.25"
@@ -279,6 +279,15 @@
   integrity sha512-UlNEH8SYseJT6ZBNljE4dNYrRecCgbc7MMn2+Des6AXXUJb88HPQ39hSE1aJwDiq43wrnff2BQadnxqV9orf7g==
   dependencies:
     "@polkadot/keyring" "^12.5.1"
+    "@polkadot/util" "^12.5.1"
+    bignumber.js "^9.1.1"
+
+"@polkadot-cloud/utils@^0.0.34":
+  version "0.0.34"
+  resolved "https://registry.yarnpkg.com/@polkadot-cloud/utils/-/utils-0.0.34.tgz#92e7d3bda00d198a733e98f05bce978b8ad4f374"
+  integrity sha512-C2F1gtg3sGA8awyCR1/IzZ0J1Fy27uvUgjtIOb1VvZsygrsTBo7EWmNhHuUGDJaH3TgrsO3yQK2KM3AuOGNXDw==
+  dependencies:
+    "@polkadot/keyring" "^12.6.1"
     "@polkadot/util" "^12.5.1"
     bignumber.js "^9.1.1"
 
@@ -2596,7 +2605,7 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framer-motion@^10.16.5:
+framer-motion@^10.16.16, framer-motion@^10.16.5:
   version "10.16.16"
   resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-10.16.16.tgz#a10a03e1190a717109163cfff212a84c8ad11b0c"
   integrity sha512-je6j91rd7NmUX7L1XHouwJ4v3R+SO4umso2LUcgOct3rHZ0PajZ80ETYZTajzEXEl9DlKyzjyt4AvGQ+lrebOw==
@@ -4480,7 +4489,7 @@ react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
-react-error-boundary@^4.0.11:
+react-error-boundary@^4.0.11, react-error-boundary@^4.0.12:
   version "4.0.12"
   resolved "https://registry.yarnpkg.com/react-error-boundary/-/react-error-boundary-4.0.12.tgz#59f8f1dbc53bbbb34fc384c8db7cf4082cb63e2c"
   integrity sha512-kJdxdEYlb7CPC1A0SeUY38cHpjuu6UkvzKiAmqmOFL21VRfMhOcWxTCBgLVCO0VEMh9JhFNcVaXlV4/BTpiwOA==
