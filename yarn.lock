@@ -248,9 +248,9 @@
   integrity sha512-fvOLAidlw+WUoBfOyCVPnlfMDAZ/H3t1dVC13RoLt47gtg48Dsp+kMve7UKIB4ozbjeW9bzj2I4OviycCxQyow==
 
 "@polkadot-cloud/core@^1.0.48":
-  version "1.0.48"
-  resolved "https://registry.yarnpkg.com/@polkadot-cloud/core/-/core-1.0.48.tgz#aa04ff6a4b8a45d8c39dc3e232936299a44d85c7"
-  integrity sha512-YeYS6OR6AxVV0Y1+FFCy0mLeL+Xxn7siYXjNm6XtTrcna0kALnQTKM8udedawwkMJujMxhQhfSWVP8i1HQT6hw==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@polkadot-cloud/core/-/core-1.1.0.tgz#ac830cc5b6998aad29e6809dd766e00c0dd5a594"
+  integrity sha512-be4UNM5K4UDDfB46LW97vAGwtz8WYffM3hHy2FSWlcm3ZK/NP5TrudqCSXGtruQsxm6b7N7Bb79wa6gdruXyAQ==
 
 "@polkadot-cloud/react@^0.1.134":
   version "0.1.137"
