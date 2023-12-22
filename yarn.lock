@@ -14,6 +14,15 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
+"@chainsafe/metamask-polkadot-adapter@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@chainsafe/metamask-polkadot-adapter/-/metamask-polkadot-adapter-0.5.1.tgz#04ecf78ce6cdcc63ebdc2c97f67d0c1efdb8bee8"
+  integrity sha512-t3/KoGTgayt2qQOmEWj5Gx8UVvqjhEuybMYadInWsvsDvmyhSKUxzGC8JlUSr4ww0Fa8Dzem21Hxo0FT9rxjyg==
+  dependencies:
+    "@polkadot/api" "^10.9.1"
+    "@polkadot/extension-inject" "^0.46.5"
+    "@polkadot/types-augment" "^10.9.1"
+
 "@chainsafe/metamask-polkadot-adapter@^0.6.0":
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/@chainsafe/metamask-polkadot-adapter/-/metamask-polkadot-adapter-0.6.0.tgz#6b11a4aca065ed77de15573c880fee50a637a3c0"
@@ -167,7 +176,7 @@
   resolved "https://registry.yarnpkg.com/@ledgerhq/errors/-/errors-6.16.1.tgz#df650a9ba105397dee2e8c0ceddf6931c5b25ede"
   integrity sha512-4D4wKecGzQpIu7sx03Sg4uE1e8g1oZUndWgw9gw776H8h9ov9c5TxPaldTn2j6orPECAERViLf7LTO4L5pE2Cw==
 
-"@ledgerhq/hw-transport-webhid@^6.27.20", "@ledgerhq/hw-transport-webhid@^6.28.0":
+"@ledgerhq/hw-transport-webhid@^6.27.20":
   version "6.28.1"
   resolved "https://registry.yarnpkg.com/@ledgerhq/hw-transport-webhid/-/hw-transport-webhid-6.28.1.tgz#af13c517514451bf60ee83d8e2b402028504af5c"
   integrity sha512-m1FzUaaRdMm+KWz+sm4RGjG1axAIYEnIC3PqwFGMtXDjyPVohdWxRJD9B2L/etR4EY67b7AH/MoQ02rpUqCCEA==
@@ -237,43 +246,41 @@
     picocolors "^1.0.0"
     tslib "^2.6.0"
 
-"@polkadot-cloud/assets@0.1.35":
-  version "0.1.35"
-  resolved "https://registry.yarnpkg.com/@polkadot-cloud/assets/-/assets-0.1.35.tgz#5718e6e0b80ac9c01e7fed150012bb2b7563a160"
-  integrity sha512-ImyHYQ01s1kFetDE5qlk5x8s/H3WDFcbCcm+GquaJxm4b/QeznSJsBP0ZeaArihsCPcSWux9nFG6P1mfToVhtw==
+"@polkadot-cloud/assets@0.1.34":
+  version "0.1.34"
+  resolved "https://registry.yarnpkg.com/@polkadot-cloud/assets/-/assets-0.1.34.tgz#a88c7066228d2e9229a026e9f86436ceae357737"
+  integrity sha512-qsXlinOgVlChbMTdBXCDaQM59jDZWrKKMizR7LR8qL2yhzLh0Ohouf0POURhuCsJ1zUjHwbsZg+4ezsKZBM+nA==
 
 "@polkadot-cloud/assets@0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@polkadot-cloud/assets/-/assets-0.2.1.tgz#a2225c98cebcf6a3ef15cfbdbd18d5ea6de017ab"
   integrity sha512-fvOLAidlw+WUoBfOyCVPnlfMDAZ/H3t1dVC13RoLt47gtg48Dsp+kMve7UKIB4ozbjeW9bzj2I4OviycCxQyow==
 
-"@polkadot-cloud/core@^1.0.48":
-  version "1.0.48"
-  resolved "https://registry.yarnpkg.com/@polkadot-cloud/core/-/core-1.0.48.tgz#aa04ff6a4b8a45d8c39dc3e232936299a44d85c7"
-  integrity sha512-YeYS6OR6AxVV0Y1+FFCy0mLeL+Xxn7siYXjNm6XtTrcna0kALnQTKM8udedawwkMJujMxhQhfSWVP8i1HQT6hw==
+"@polkadot-cloud/core@1.1.1", "@polkadot-cloud/core@^1.0.48":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@polkadot-cloud/core/-/core-1.1.1.tgz#671d05ebfac5bfbbfd49b8705e4c01042fbddcbc"
+  integrity sha512-v2M+nu0g/ZIv7K6yi4kYKGNxPdRWVgEzDKluOagoRiNs3n6n1L7A5f2XYNVOxMGkgqrlVbqJpWWBrAJugaZY1A==
 
-"@polkadot-cloud/react@^0.1.134":
-  version "0.1.137"
-  resolved "https://registry.yarnpkg.com/@polkadot-cloud/react/-/react-0.1.137.tgz#fc723f687829ee191981a522d1dba25e6f5f4d5c"
-  integrity sha512-O8d4KHtWFXxyvna7mZhTAHSKQvQ8eLMwbgNJ0ChaLs3iyxTLyIi8sjl/+11X4JTroBhvgSlQJATjjmO8iX7nQw==
+"@polkadot-cloud/react@0.1.134":
+  version "0.1.134"
+  resolved "https://registry.yarnpkg.com/@polkadot-cloud/react/-/react-0.1.134.tgz#4c5beb175cdaf3989a71cf34030b09104674b265"
+  integrity sha512-VBulrqaaWYnf42K/YtSnlEhjaNocCNXOWaesegkfVe9rCOb5Pl7IbPd0EGQhKoyIp4KKx0yo1BypF/ZmYCPHRA==
   dependencies:
-    "@chainsafe/metamask-polkadot-adapter" "^0.6.0"
-    "@chainsafe/metamask-polkadot-types" "^0.6.0"
+    "@chainsafe/metamask-polkadot-adapter" "^0.5.1"
     "@fortawesome/fontawesome-svg-core" "^6.4.2"
     "@fortawesome/free-brands-svg-icons" "^6.4.2"
     "@fortawesome/free-regular-svg-icons" "^6.4.2"
     "@fortawesome/free-solid-svg-icons" "^6.4.2"
     "@fortawesome/react-fontawesome" "^0.2.0"
-    "@ledgerhq/hw-transport-webhid" "^6.28.0"
-    "@polkadot-cloud/assets" "0.1.35"
+    "@polkadot-cloud/assets" "0.1.34"
     "@polkadot-cloud/core" "^1.0.48"
     "@polkadot-cloud/utils" "^0.0.25"
-    "@polkadot/keyring" "^12.6.1"
+    "@polkadot/keyring" "^12.5.1"
     "@polkadot/util" "^12.5.1"
     "@polkadot/util-crypto" "^12.5.1"
     framer-motion "^10.16.5"
 
-"@polkadot-cloud/utils@^0.0.25":
+"@polkadot-cloud/utils@0.0.25", "@polkadot-cloud/utils@^0.0.25":
   version "0.0.25"
   resolved "https://registry.yarnpkg.com/@polkadot-cloud/utils/-/utils-0.0.25.tgz#8c4f8a9a64942f4397a6368c2093ddd4feab2b4a"
   integrity sha512-UlNEH8SYseJT6ZBNljE4dNYrRecCgbc7MMn2+Des6AXXUJb88HPQ39hSE1aJwDiq43wrnff2BQadnxqV9orf7g==
