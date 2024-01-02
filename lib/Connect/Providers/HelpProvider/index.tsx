@@ -1,4 +1,4 @@
-// Copyright 2023 @polkadot-cloud/recipes authors & contributors
+// Copyright 2024 @polkadot-cloud/recipes authors & contributors
 // SPDX-License-Identifier: GPL-3.0-only
 
 import { useState, createContext, useContext } from "react";
