@@ -68,7 +68,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@ledgerhq/hw-transport-webhid": "^6.27.20",
     "@polkadot-cloud/assets": "0.3.0",
-    "@polkadot-cloud/core": "1.0.48",
+    "@polkadot-cloud/core": "1.2.0",
     "@polkadot-cloud/react": "0.3.4",
     "@polkadot-cloud/utils": "0.0.25",
     "@polkadot/keyring": "^12.6.1",
