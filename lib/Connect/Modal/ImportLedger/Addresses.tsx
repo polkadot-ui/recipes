@@ -1,9 +1,9 @@
-/* @license Copyright 2024 @polkadot-cloud/recipes authors & contributors
-SPDX-License-Identifier: GPL-3.0-only */
+/* @license Copyright 2024 @polkadot-ui/recipes authors & contributors
+SPDX-License-Identifier: MIT */
 
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { Button, HardwareAddress, Polkicon } from "@polkadot-cloud/react";
-import { ellipsisFn, unescape } from "@polkadot-cloud/utils";
+import { Button, HardwareAddress, Polkicon } from "@polkadot-ui/react";
+import { ellipsisFn, unescape } from "@polkadot-ui/utils";
 
 import { useLedgerHardware } from "../../Providers/HardwareProviders/Ledger";
 import { getLocalLedgerAddresses } from "../../Providers/HardwareProviders/Utils";
@@ -11,10 +11,10 @@ import { getLocalLedgerAddresses } from "../../Providers/HardwareProviders/Utils
 import { usePrompt } from "../../Providers/PromptProvider";
 import { Confirm } from "../ImportHardwareCommon/Confirm";
 import { Remove } from "../ImportHardwareCommon/Remove";
-import type { AnyJson } from "@polkadot-cloud/react/utils/types";
+import type { AnyJson } from "@polkadot-ui/react/utils/types";
 import { useOtherAccounts } from "../../Providers/OtherAccountsProvider";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/ImportHardwareCommon/index.css";
+import "@polkadot-ui/core/css/recipes/Connect/Modal/ImportHardwareCommon/index.css";
 
 export const Addresess = ({
   addresses,

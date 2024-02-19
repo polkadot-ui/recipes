@@ -1,13 +1,13 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import type { ReactNode } from "react";
 import { createContext, useContext } from "react";
 // Local imports
-import type { ExternalAccount } from "@polkadot-cloud/react/connect/types";
-import type { MaybeAddress } from "@polkadot-cloud/react/utils/types";
+import type { ExternalAccount } from "@polkadot-ui/react/connect/types";
+import type { MaybeAddress } from "@polkadot-ui/react/utils/types";
 import { ManualSigners } from "../../Utils";
-import { useExtensionAccounts } from "@polkadot-cloud/react/hooks";
+import { useExtensionAccounts } from "@polkadot-ui/react/hooks";
 import { defaultImportedAccountsContext } from "./defaults";
 import type { ImportedAccountsContextInterface } from "./types";
 import { useOtherAccounts } from "../OtherAccountsProvider";

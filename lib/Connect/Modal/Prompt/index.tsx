@@ -1,8 +1,8 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { usePrompt } from "../../Providers/PromptProvider";
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Prompt/index.css";
+import "@polkadot-ui/core/css/recipes/Connect/Modal/Prompt/index.css";
 
 // eslint-disable-next-line import/no-unresolved
 import "./index.css";

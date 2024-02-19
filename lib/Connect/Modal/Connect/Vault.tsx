@@ -1,20 +1,20 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { ReactElement } from "react";
 
 import { faExternalLinkAlt, faQrcode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
+import { useOverlay } from "@polkadot-ui/react/overlay/OverlayProvider/useOverlay";
 
 import {
   ModalConnectItem,
   ModalHardwareItem,
   Button,
-} from "@polkadot-cloud/react";
-import { PolkadotVault } from "@polkadot-cloud/assets/extensions/jsx/PolkadotVault";
+} from "@polkadot-ui/react";
+import { PolkadotVault } from "@polkadot-ui/assets/extensions/jsx/PolkadotVault";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Connect/index.css";
+import "@polkadot-ui/core/css/recipes/Connect/Modal/Connect/index.css";
 
 export const Vault = (): ReactElement => {
   const { replaceModal } = useOverlay().modal;

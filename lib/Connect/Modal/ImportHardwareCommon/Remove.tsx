@@ -1,12 +1,12 @@
-/* @license Copyright 2024 @polkadot-cloud/recipes authors & contributors
-SPDX-License-Identifier: GPL-3.0-only */
+/* @license Copyright 2024 @polkadot-ui/recipes authors & contributors
+SPDX-License-Identifier: MIT */
 
-import { Button, Polkicon } from "@polkadot-cloud/react";
+import { Button, Polkicon } from "@polkadot-ui/react";
 import { usePrompt } from "../../Providers/PromptProvider";
 import { useOtherAccounts } from "../../Providers/OtherAccountsProvider";
 import type { RemoveProps } from "./types";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/ImportHardwareCommon/index.css";
+import "@polkadot-ui/core/css/recipes/Connect/Modal/ImportHardwareCommon/index.css";
 
 // eslint-disable-next-line import/no-unresolved
 import "./index.css";

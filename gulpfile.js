@@ -1,5 +1,5 @@
-/* @license Copyright 2024 @polkadot-cloud/recipes authors & contributors
-SPDX-License-Identifier: GPL-3.0-only */
+/* @license Copyright 2024 @polkadot-ui/recipes authors & contributors
+SPDX-License-Identifier: MIT */
 /* eslint-disable @typescript-eslint/no-var-requires */
 
 import pkg from "gulp";

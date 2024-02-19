@@ -1,12 +1,9 @@
 {
-  "name": "polkadot-cloud-recipes",
-  "license": "GPL-3.0-only",
-  "version": "0.0.3",
+  "name": "polkadot-ui-recipes",
+  "license": "MIT",
+  "version": "0.0.4",
   "type": "module",
-  "contributors": [
-    "Ross Bulat<ross@parity.io>",
-    "Nikolaos Kontakis<wirednkod@gmail.com>"
-  ],
+  "author": "Nikolaos Kontakis<wirednkod@gmail.com>",
   "description": "React Recipes for Polkadot Dapps.",
   "keywords": [
     "Polkadot",
@@ -16,11 +13,11 @@
     "UI"
   ],
   "bugs": {
-    "url": "https://github.com/polkadot-cloud/polkadot-cloud/issues"
+    "url": "https://github.com/polkadot-ui/recipes/issues"
   },
-  "homepage": "https://github.com/polkadot-cloud/polkadot-cloud#readme",
+  "homepage": "https://github.com/polkadot-ui/recipes#readme",
   "scripts": {
-    "build:mock": "node ./scripts/generatePackageJson.mjs -p cloud-recipes -m index.js",
+    "build:mock": "node ./scripts/generatePackageJson.mjs -p ui-recipes -m index.js",
     "prebuild": "node ./scripts/prebuild.mjs",
     "build": "rm -fr dist && gulp && mv dist/README.npm.md dist/README.md",
     "postbuild": "node ./scripts/postbuild.mjs",
@@ -43,9 +40,10 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@ledgerhq/hw-transport-webhid": "^6.27.20",
-    "@polkadot-cloud/assets": "0.3.4",
-    "@polkadot-cloud/core": "^1.0.48",
-    "@polkadot-cloud/utils": "^0.0.25",
+    "@polkadot-ui/assets": "^0.5.2",
+    "@polkadot-ui/core": "^2.0.0",
+    "@polkadot-ui/react": "^0.5.0",
+    "@polkadot-ui/utils": "^0.4.0",
     "@polkadot/keyring": "^12.6.1",
     "@polkadot/util": "^12.5.1",
     "@polkadot/util-crypto": "^12.5.1",
@@ -67,10 +65,10 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@ledgerhq/hw-transport-webhid": "^6.27.20",
-    "@polkadot-cloud/assets": "0.3.4",
-    "@polkadot-cloud/core": "1.0.48",
-    "@polkadot-cloud/react": "0.3.8",
-    "@polkadot-cloud/utils": "0.0.25",
+    "@polkadot-ui/assets": "^0.5.2",
+    "@polkadot-ui/core": "^2.0.0",
+    "@polkadot-ui/react": "^0.5.0",
+    "@polkadot-ui/utils": "^0.4.0",
     "@polkadot/keyring": "^12.6.1",
     "@polkadot/util": "^12.5.1",
     "@polkadot/util-crypto": "^12.5.1",
@@ -109,5 +107,8 @@
     "sass": "^1.69.5",
     "stylelint-config-standard-scss": "^12.0.0",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "merge-stream": "^2.0.0"
   }
 }

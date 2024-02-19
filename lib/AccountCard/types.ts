@@ -1,15 +1,15 @@
-/* @license Copyright 2024 @polkadot-cloud/recipes authors & contributors
-SPDX-License-Identifier: GPL-3.0-only */
+/* @license Copyright 2024 @polkadot-ui/recipes authors & contributors
+SPDX-License-Identifier: MIT */
 import { JSX } from "react";
 import {
   GridItemsAlignment,
   GridJustify,
   GridSizes,
-} from "@polkadot-cloud/react/types";
+} from "@polkadot-ui/react/types";
 import {
   HPositionLR,
   ComponentBaseWithClassName,
-} from "@polkadot-cloud/react/utils/types";
+} from "@polkadot-ui/react/utils/types";
 
 export type FontType =
   | "xx-small"

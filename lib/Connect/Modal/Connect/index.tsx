@@ -1,5 +1,5 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -10,18 +10,18 @@ import {
   ModalPadding,
   ModalSection,
   ModalCustomHeader,
-} from "@polkadot-cloud/react";
+} from "@polkadot-ui/react";
 
-import { ExtensionsArray } from "@polkadot-cloud/assets/extensions";
+import { ExtensionsArray } from "@polkadot-ui/assets/extensions";
 import { useEffect, useRef, useState } from "react";
 import {
   useEffectIgnoreInitial,
   useExtensions,
-} from "@polkadot-cloud/react/hooks";
-import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
+} from "@polkadot-ui/react/hooks";
+import { useOverlay } from "@polkadot-ui/react/overlay/OverlayProvider/useOverlay";
 
 import { SelectItems } from "./SelectItems";
-import type { AnyFunction } from "@polkadot-cloud/react/utils/types";
+import type { AnyFunction } from "@polkadot-ui/react/utils/types";
 import { Extension } from "./Extension";
 import { Ledger } from "./Ledger";
 import { Proxies } from "./Proxies";
@@ -33,7 +33,7 @@ window.Buffer = Buffer;
 
 import { useConnectConfig } from "../../Providers/ConnectConfigProvider";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Connect/index.css";
+import "@polkadot-ui/core/css/recipes/Connect/Modal/Connect/index.css";
 
 // eslint-disable-next-line import/no-unresolved
 import "./index.css";

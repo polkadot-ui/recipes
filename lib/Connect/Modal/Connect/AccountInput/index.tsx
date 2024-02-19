@@ -1,18 +1,18 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Polkicon } from "@polkadot-cloud/react";
-import { isValidAddress } from "@polkadot-cloud/utils";
+import { Button, Polkicon } from "@polkadot-ui/react";
+import { isValidAddress } from "@polkadot-ui/utils";
 import { FormEvent, useEffect, useState } from "react";
-import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
+import { useOverlay } from "@polkadot-ui/react/overlay/OverlayProvider/useOverlay";
 import { useImportedAccounts } from "../../../Providers/ImportedAccountsProvider";
 import { formatAccountSs58 } from "../../../Utils";
 import type { AccountInputProps } from "./types";
 import { useConnectConfig } from "../../../Providers/ConnectConfigProvider";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Connect/AccountInput/index.css";
+import "@polkadot-ui/core/css/recipes/Connect/Modal/Connect/AccountInput/index.css";
 // eslint-disable-next-line import/no-unresolved
 import "./index.css";
 

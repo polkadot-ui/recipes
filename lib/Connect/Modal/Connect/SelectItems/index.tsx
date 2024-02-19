@@ -1,5 +1,5 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import type { MutableRefObject } from "react";
 import {
@@ -9,10 +9,10 @@ import {
   useLayoutEffect,
   useRef,
 } from "react";
-import type { AnyJson } from "@polkadot-cloud/react/utils/types";
+import type { AnyJson } from "@polkadot-ui/react/utils/types";
 import type { SelectItemsProps } from "./types";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Connect/SelectItems/index.css";
+import "@polkadot-ui/core/css/recipes/Connect/Modal/Connect/SelectItems/index.css";
 // eslint-disable-next-line import/no-unresolved
 import "./index.css";
 

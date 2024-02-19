@@ -1,13 +1,13 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import { Button } from "@polkadot-cloud/react";
+import { Button } from "@polkadot-ui/react";
 
-import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
-import { Any } from "@polkadot-cloud/react/utils/types";
+import { useOverlay } from "@polkadot-ui/react/overlay/OverlayProvider/useOverlay";
+import { Any } from "@polkadot-ui/react/utils/types";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/ImportHardwareCommon/index.css";
+import "@polkadot-ui/core/css/recipes/Connect/Modal/ImportHardwareCommon/index.css";
 
 // eslint-disable-next-line import/no-unresolved
 import "./index.css";

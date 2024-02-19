@@ -1,16 +1,16 @@
-/* @license Copyright 2024 @polkadot-cloud/recipes authors & contributors
-SPDX-License-Identifier: GPL-3.0-only */
+/* @license Copyright 2024 @polkadot-ui/recipes authors & contributors
+SPDX-License-Identifier: MIT */
 
 import { useEffect, useState } from "react";
 
-import { Grid, Card, Polkicon } from "@polkadot-cloud/react";
-import { GridSizes } from "@polkadot-cloud/react/base/types";
-import { valEmpty } from "@polkadot-cloud/react/utils";
-import { ellipsisFn } from "@polkadot-cloud/utils";
+import { Grid, Card, Polkicon } from "@polkadot-ui/react";
+import { GridSizes } from "@polkadot-ui/react/base/types";
+import { valEmpty } from "@polkadot-ui/react/utils";
+import { ellipsisFn } from "@polkadot-ui/utils";
 import {
   HPosition,
   ComponentBaseWithClassName,
-} from "@polkadot-cloud/react/utils/types";
+} from "@polkadot-ui/react/utils/types";
 
 // eslint-disable-next-line import/no-unresolved
 import "./index.css";
@@ -67,7 +67,7 @@ export const AccountCard = ({
     let mGridSize: GridSizes = 8;
 
     // Based on the existance of icon/extraComponent and if their sizes are given as params, the following 'if' is calculating the correct sizes
-    // in the 12 column Grid that polakdot-cloud supports at the moment, and sets the states accordingly
+    // in the 12 column Grid that polakdot-ui supports at the moment, and sets the states accordingly
     if (icon?.gridSize || extraComponent?.gridSize) {
       iGridSize = icon?.gridSize || 2;
       xGridSize = extraComponent?.gridSize || 2;

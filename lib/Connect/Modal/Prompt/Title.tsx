@@ -1,15 +1,15 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import type { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button } from "@polkadot-cloud/react/";
+import { Button } from "@polkadot-ui/react/";
 import type { FunctionComponent } from "react";
 
 import { usePrompt } from "../../Providers/PromptProvider";
-import { Any } from "@polkadot-cloud/react/utils/types";
+import { Any } from "@polkadot-ui/react/utils/types";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Prompt/index.css";
+import "@polkadot-ui/core/css/recipes/Connect/Modal/Prompt/index.css";
 
 interface TitleProps {
   title: string;

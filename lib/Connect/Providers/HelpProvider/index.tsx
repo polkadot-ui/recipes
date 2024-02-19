@@ -1,9 +1,9 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { useState, createContext, useContext } from "react";
-import type { MaybeString } from "@polkadot-cloud/react/utils/types";
-import { useEffectIgnoreInitial } from "@polkadot-cloud/react";
+import type { MaybeString } from "@polkadot-ui/react/utils/types";
+import { useEffectIgnoreInitial } from "@polkadot-ui/react";
 import * as defaults from "./defaults";
 import type {
   HelpContextInterface,

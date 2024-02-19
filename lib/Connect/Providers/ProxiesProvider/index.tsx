@@ -1,21 +1,21 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import type {
   VoidFn,
   AnyApi,
   MaybeAddress,
-} from "@polkadot-cloud/react/utils/types";
+} from "@polkadot-ui/react/utils/types";
 import {
   ellipsisFn,
   localStorageOrDefault,
   matchedProperties,
   removedFrom,
   setStateWithRef,
-} from "@polkadot-cloud/utils";
+} from "@polkadot-ui/utils";
 import { useRef, useState, ReactNode, createContext, useContext } from "react";
 import { isSupportedProxy } from "./proxies";
-import { useEffectIgnoreInitial } from "@polkadot-cloud/react/hooks";
+import { useEffectIgnoreInitial } from "@polkadot-ui/react/hooks";
 import { useActiveAccounts } from "../ActiveAccountsProvider";
 import { useImportedAccounts } from "../ImportedAccountsProvider";
 import { useOtherAccounts } from "../OtherAccountsProvider";

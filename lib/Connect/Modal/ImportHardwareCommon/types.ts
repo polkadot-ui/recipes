@@ -1,8 +1,8 @@
-/* @license Copyright 2024 @polkadot-cloud/recipes authors & contributors
-SPDX-License-Identifier: GPL-3.0-only */
+/* @license Copyright 2024 @polkadot-ui/recipes authors & contributors
+SPDX-License-Identifier: MIT */
 
 import type { FunctionComponent, SVGProps } from "react";
-import type { AnyFunction } from "@polkadot-cloud/react/utils/types";
+import type { AnyFunction } from "@polkadot-ui/react/utils/types";
 
 export interface HeadingProps {
   connectTo?: string;

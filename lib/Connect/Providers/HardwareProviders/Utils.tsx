@@ -1,14 +1,14 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
-import { localStorageOrDefault } from "@polkadot-cloud/utils";
+import { localStorageOrDefault } from "@polkadot-ui/utils";
 import type { LedgerApp, LedgerAddress } from "./types";
 
-import type { MaybeString } from "@polkadot-cloud/react/utils/types";
+import type { MaybeString } from "@polkadot-ui/react/utils/types";
 import type {
   LedgerAccount,
   VaultAccount,
-} from "@polkadot-cloud/react/connect/types";
+} from "@polkadot-ui/react/connect/types";
 
 // TODO: Icons of Kusama and Polkadot
 // import KusamaSVG from "../../assets/appIcons/kusama.svg";

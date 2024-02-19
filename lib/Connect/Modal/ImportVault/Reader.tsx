@@ -1,9 +1,9 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
-import { Any } from "@polkadot-cloud/react/utils/types";
-import { Button } from "@polkadot-cloud/react/";
-import { isValidAddress } from "@polkadot-cloud/utils";
+import { Any } from "@polkadot-ui/react/utils/types";
+import { Button } from "@polkadot-ui/react/";
+import { isValidAddress } from "@polkadot-ui/utils";
 import { useEffect, useState } from "react";
 import { useVaultHardware } from "../../Providers/HardwareProviders/Vault";
 import { usePrompt } from "../../Providers/PromptProvider";

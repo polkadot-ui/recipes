@@ -1,5 +1,5 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { objectSpread } from "@polkadot/util";
 import { xxhashAsHex } from "@polkadot/util-crypto";
@@ -15,7 +15,7 @@ import { qrcode } from "./qrcode.js";
 import type { DisplayProps, FrameState, TimerState } from "./types.js";
 import { createFrames, createImgSize } from "./util.js";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/QRCode/index.css";
+import "@polkadot-ui/core/css/recipes/Connect/Modal/QRCode/index.css";
 
 const DEFAULT_FRAME_DELAY = 2750;
 const TIMER_INC = 500;

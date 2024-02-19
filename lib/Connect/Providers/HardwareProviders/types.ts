@@ -1,13 +1,13 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import type {
   LedgerAccount,
   VaultAccount,
-} from "@polkadot-cloud/react/connect/types";
+} from "@polkadot-ui/react/connect/types";
 import type { FunctionComponent, SVGProps } from "react";
 import type { NetworkName } from "../../Utils";
-import type { AnyJson, MaybeString } from "@polkadot-cloud/react/utils/types";
+import type { AnyJson, MaybeString } from "@polkadot-ui/react/utils/types";
 
 export type LedgerHardwareContextInterface = {
   pairDevice: () => Promise<boolean>;

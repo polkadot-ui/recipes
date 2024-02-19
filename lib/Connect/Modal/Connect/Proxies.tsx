@@ -1,5 +1,5 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import {
   faChevronRight,
@@ -7,7 +7,7 @@ import {
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Polkicon } from "@polkadot-cloud/react";
+import { Button, Polkicon } from "@polkadot-ui/react";
 import { Fragment } from "react";
 import { useProxies } from "../../Providers/ProxiesProvider";
 import { AccountInput } from "./AccountInput";

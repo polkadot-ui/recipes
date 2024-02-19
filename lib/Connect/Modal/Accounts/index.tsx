@@ -1,5 +1,5 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { faChevronLeft, faLinkSlash } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -7,18 +7,18 @@ import {
   Button,
   ModalCustomHeader,
   ModalPadding,
-} from "@polkadot-cloud/react";
+} from "@polkadot-ui/react";
 import { Fragment, useEffect, useState } from "react";
 
 // TODO: No idea what to do
 // import { useBalances } from "contexts/Balances";
 // import { useBonded } from "contexts/Bonded";
 
-import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
+import { useOverlay } from "@polkadot-ui/react/overlay/OverlayProvider/useOverlay";
 import {
   useExtensions,
   useEffectIgnoreInitial,
-} from "@polkadot-cloud/react/hooks";
+} from "@polkadot-ui/react/hooks";
 
 // import { usePoolMemberships } from "contexts/Pools/PoolMemberships";
 import { useProxies } from "../../Providers/ProxiesProvider";
@@ -36,7 +36,7 @@ import type {
 // eslint-disable-next-line import/no-unresolved
 import "./index.css";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Accounts/index.css";
+import "@polkadot-ui/core/css/recipes/Connect/Modal/Accounts/index.css";
 
 // TODO: Fix many API things
 

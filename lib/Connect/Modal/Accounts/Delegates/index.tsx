@@ -1,5 +1,5 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { isSupportedProxy } from "../../../Providers/ProxiesProvider/proxies";
 import { useImportedAccounts } from "../../../Providers/ImportedAccountsProvider";
@@ -9,7 +9,7 @@ import type { DelegatesProps } from "../types";
 // eslint-disable-next-line import/no-unresolved
 import "./index.css";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Accounts/Delegates/index.css";
+import "@polkadot-ui/core/css/recipes/Connect/Modal/Accounts/Delegates/index.css";
 
 export const Delegates = ({ delegates, delegator }: DelegatesProps) => {
   const { accounts } = useImportedAccounts();

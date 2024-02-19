@@ -1,5 +1,5 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { useEffect } from "react";
 import { faQrcode } from "@fortawesome/free-solid-svg-icons";
@@ -8,21 +8,21 @@ import {
   HardwareAddress,
   HardwareStatusBar,
   Polkicon,
-} from "@polkadot-cloud/react";
+} from "@polkadot-ui/react";
 import { useVaultHardware } from "../../Providers/HardwareProviders/Vault";
 import { usePrompt } from "../../Providers/PromptProvider";
-import PolkadotVaultSVG from "@polkadot-cloud/assets/extensions/jsx/PolkadotVault";
+import PolkadotVaultSVG from "@polkadot-ui/assets/extensions/jsx/PolkadotVault";
 
 import { Confirm } from "../ImportHardwareCommon/Confirm";
 import { Heading } from "../ImportHardwareCommon/Heading";
 import { NoAccounts } from "../ImportHardwareCommon/NoAccounts";
 import { Remove } from "../ImportHardwareCommon/Remove";
-import type { AnyJson } from "@polkadot-cloud/utils/types";
-import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
+import type { AnyJson } from "@polkadot-ui/utils/types";
+import { useOverlay } from "@polkadot-ui/react/overlay/OverlayProvider/useOverlay";
 import { useOtherAccounts } from "../../Providers/OtherAccountsProvider";
 import { Reader } from "./Reader";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/ImportHardwareCommon/index.css";
+import "@polkadot-ui/core/css/recipes/Connect/Modal/ImportHardwareCommon/index.css";
 
 export const ImportVault = () => {
   const { replaceModal } = useOverlay().modal;

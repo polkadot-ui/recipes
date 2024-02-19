@@ -1,7 +1,7 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
-import { ellipsisFn, setStateWithRef } from "@polkadot-cloud/utils";
+import { ellipsisFn, setStateWithRef } from "@polkadot-ui/utils";
 import { useEffect, useRef, useState } from "react";
 import { useLedgerHardware } from "../../Providers/HardwareProviders/Ledger";
 import { getLocalLedgerAddresses } from "../../Providers/HardwareProviders/Utils";
@@ -10,8 +10,8 @@ import type {
   LedgerResponse,
 } from "../../Providers/HardwareProviders/types";
 import { useLedgerLoop } from "../useLedgerLoop";
-import type { AnyJson } from "@polkadot-cloud/react/utils/types";
-import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
+import type { AnyJson } from "@polkadot-ui/react/utils/types";
+import { useOverlay } from "@polkadot-ui/react/overlay/OverlayProvider/useOverlay";
 
 import { Manage } from "./Manage";
 import { Splash } from "./Splash";

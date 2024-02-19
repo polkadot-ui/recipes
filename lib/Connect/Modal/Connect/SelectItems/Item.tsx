@@ -1,12 +1,12 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { faCircle } from "@fortawesome/free-regular-svg-icons";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { SelectItemProps } from "./types";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Connect/SelectItems/index.css";
+import "@polkadot-ui/core/css/recipes/Connect/Modal/Connect/SelectItems/index.css";
 
 export const SelectItem = ({
   title,
