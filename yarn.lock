@@ -465,15 +465,6 @@
     "@polkadot/util-crypto" "^12.5.1"
     framer-motion "^10.16.16"
 
-"@polkadot-cloud/utils@^0.0.25":
-  version "0.0.25"
-  resolved "https://registry.yarnpkg.com/@polkadot-cloud/utils/-/utils-0.0.25.tgz#8c4f8a9a64942f4397a6368c2093ddd4feab2b4a"
-  integrity sha512-UlNEH8SYseJT6ZBNljE4dNYrRecCgbc7MMn2+Des6AXXUJb88HPQ39hSE1aJwDiq43wrnff2BQadnxqV9orf7g==
-  dependencies:
-    "@polkadot/keyring" "^12.5.1"
-    "@polkadot/util" "^12.5.1"
-    bignumber.js "^9.1.1"
-
 "@polkadot-cloud/utils@^0.0.34":
   version "0.0.34"
   resolved "https://registry.yarnpkg.com/@polkadot-cloud/utils/-/utils-0.0.34.tgz#92e7d3bda00d198a733e98f05bce978b8ad4f374"
@@ -481,6 +472,15 @@
   dependencies:
     "@polkadot/keyring" "^12.6.1"
     "@polkadot/util" "^12.5.1"
+    bignumber.js "^9.1.1"
+
+"@polkadot-cloud/utils@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@polkadot-cloud/utils/-/utils-0.3.0.tgz#962338d14cc1a63019640191a60847c1f88a9063"
+  integrity sha512-dAhUrRPixGNsklazJjbKkfWZafoq4H4V8bTTNY35StR7OnIr4optvQB80m99yzx+KGiGcIrOw6y+NVYjhYjVEw==
+  dependencies:
+    "@polkadot/keyring" "^12.6.2"
+    "@polkadot/util" "^12.6.2"
     bignumber.js "^9.1.1"
 
 "@polkadot/api-augment@10.11.2":
@@ -559,7 +559,7 @@
     "@polkadot/x-global" "^12.6.1"
     tslib "^2.6.2"
 
-"@polkadot/keyring@^12.5.1", "@polkadot/keyring@^12.6.1", "@polkadot/keyring@^12.6.2":
+"@polkadot/keyring@^12.6.1", "@polkadot/keyring@^12.6.2":
   version "12.6.2"
   resolved "https://registry.yarnpkg.com/@polkadot/keyring/-/keyring-12.6.2.tgz#6067e6294fee23728b008ac116e7e9db05cecb9b"
   integrity sha512-O3Q7GVmRYm8q7HuB3S0+Yf/q/EB2egKRRU3fv9b3B7V+A52tKzA+vIwEmNVaD1g5FKW9oB97rmpggs0zaKFqHw==
@@ -1618,9 +1618,10 @@ bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-"bip32-ed25519@git+https://github.com/Zondax/bip32-ed25519.git":
+"bip32-ed25519@https://github.com/Zondax/bip32-ed25519":
   version "0.0.4"
-  resolved "git+https://github.com/Zondax/bip32-ed25519.git#0949df01b5c93885339bc28116690292088f6134"
+  uid "0949df01b5c93885339bc28116690292088f6134"
+  resolved "https://github.com/Zondax/bip32-ed25519#0949df01b5c93885339bc28116690292088f6134"
   dependencies:
     bn.js "^5.1.1"
     elliptic "^6.4.1"
