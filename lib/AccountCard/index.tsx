@@ -1,20 +1,73 @@
 /* @license Copyright 2024 @polkadot-ui/recipes authors & contributors
 SPDX-License-Identifier: MIT */
 
-import { useEffect, useState } from "react";
+import { JSX, useEffect, useState } from "react";
 
 import { Grid, Card, Polkicon } from "@polkadot-ui/react";
 import { GridSizes } from "@polkadot-ui/react/base/types";
 import { valEmpty } from "@polkadot-ui/react/utils";
 import { ellipsisFn } from "@polkadot-ui/utils";
 import {
+  HPositionLR,
   HPosition,
   ComponentBaseWithClassName,
 } from "@polkadot-ui/react/utils/types";
 
-// eslint-disable-next-line import/no-unresolved
-import "./index.css";
-import { AccountCardProps, FontType } from "./types";
+import "./index.scss";
+
+type FontType =
+  | "xx-small"
+  | "x-small"
+  | "small"
+  | "medium"
+  | "large"
+  | "larger"
+  | "x-large"
+  | "xx-large";
+
+interface AccountCardProps {
+  title: TitleProps;
+  fontSize?: FontType | string;
+  ellipsis?: EllipsisProps;
+  icon?: IconProps;
+  extraComponent?: ExtraComponentProps;
+  noCard?: boolean;
+}
+
+export interface IconProps extends CommonParams, ComponentBaseWithClassName {
+  size?: number;
+  copy?: boolean;
+  position?: HPositionLR;
+  colors?: string[];
+  outerColor?: string;
+  dark?: boolean;
+}
+
+export interface ExtraComponentProps
+  extends CommonParams,
+    ComponentBaseWithClassName {
+  component?: JSX.Element;
+  position?: HPositionLR;
+}
+
+export interface EllipsisProps {
+  active?: boolean;
+  amount?: number;
+  position?: string;
+}
+
+interface CommonParams {
+  gridSize?: GridSizes;
+  justify?: GridJustify;
+}
+
+export interface TitleProps extends ComponentBaseWithClassName {
+  address: string;
+  align?: GridItemsAlignment;
+  justify?: GridJustify;
+  component?: JSX.Element;
+  name?: string;
+}
 
 const isOfFontType = (input: string): input is FontType => {
   return [
@@ -56,7 +109,7 @@ export const AccountCard = ({
   const [mainSize, setMainSize] = useState<GridSizes>(12);
   // state xtraSize (extra component's Grid column size)
   const [xtraSize, setXtraSize] = useState<GridSizes | undefined>(
-    extraComponent?.gridSize
+    extraComponent?.gridSize,
   );
 
   // Adjust the columns
@@ -119,7 +172,7 @@ export const AccountCard = ({
                 whiteSpace: "nowrap",
                 overflow: "hidden",
               }
-            : {}
+            : {},
         )}
         className={`${title?.className} ${fontClasses
           ?.filter((a) => a.trim() != "")
@@ -130,7 +183,7 @@ export const AccountCard = ({
             ? ellipsisFn(
                 title?.name || title.address,
                 ellipsis.amount,
-                (ellipsis?.position as HPosition) || "center"
+                (ellipsis?.position as HPosition) || "center",
               )
             : title?.name || title.address)}
       </div>

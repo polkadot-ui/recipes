@@ -47,7 +47,7 @@ export const ImportVault = () => {
   const openConfirmHandler = (address: string, index: number) => {
     openPromptWith(
       <Confirm address={address} index={index} addHandler={addVaultAccount} />,
-      "small"
+      "small",
     );
   };
 
@@ -58,7 +58,7 @@ export const ImportVault = () => {
         removeHandler={removeVaultAccount}
         getHandler={getVaultAccount}
       />,
-      "small"
+      "small",
     );
   };
 

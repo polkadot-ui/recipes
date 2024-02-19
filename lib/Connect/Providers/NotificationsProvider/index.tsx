@@ -18,7 +18,7 @@ export const NotificationsProvider = ({
 }) => {
   const [index, setIndexState] = useState<number>(0);
   const [notifications, setNotifications] = useState<NotificationInterface[]>(
-    []
+    [],
   );
 
   const indexRef = useRef(index);
@@ -55,7 +55,7 @@ export const NotificationsProvider = ({
 
   const removeNotification = (i: number) => {
     const newNotifications = notificationsRef.current.filter(
-      (item: NotificationInterface) => item.index !== i
+      (item: NotificationInterface) => item.index !== i,
     );
     setStateWithRef(newNotifications, setNotifications, notificationsRef);
   };

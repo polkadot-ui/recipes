@@ -2,10 +2,18 @@
 // SPDX-License-Identifier: MIT
 
 import { faChevronLeft, faLinkSlash } from "@fortawesome/free-solid-svg-icons";
+// import {
+//   ActionItem,
+//   ButtonPrimaryInvert,
+//   ButtonText,
+//   ModalCustomHeader,
+//   ModalPadding,
+// } from "@polkadot-cloud/react";
+import { Fragment, useEffect, useState } from "react";
+
 import {
   ActionItem,
-  Button,
-  ModalCustomHeader,
+  useEffectIgnoreInitial,
   ModalPadding,
 } from "@polkadot-ui/react";
 import { Fragment, useEffect, useState } from "react";
@@ -34,7 +42,7 @@ import type {
 } from "./types";
 
 // eslint-disable-next-line import/no-unresolved
-import "./index.css";
+import "./index.scss";
 
 import "@polkadot-ui/core/css/recipes/Connect/Modal/Accounts/index.css";
 

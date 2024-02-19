@@ -7,7 +7,7 @@ import { AccountButton } from "../Account";
 import type { DelegatesProps } from "../types";
 
 // eslint-disable-next-line import/no-unresolved
-import "./index.css";
+import "./index.scss";
 
 import "@polkadot-ui/core/css/recipes/Connect/Modal/Accounts/Delegates/index.css";
 
@@ -22,7 +22,7 @@ export const Delegates = ({ delegates, delegator }: DelegatesProps) => {
       ({ delegate, proxyType }) =>
         accounts.find(({ address }) => address === delegate) !== undefined &&
         isSupportedProxy(proxyType) &&
-        getAccount(delegate || null)?.source !== "external"
+        getAccount(delegate || null)?.source !== "external",
     ) || [];
 
   return (
@@ -31,7 +31,7 @@ export const Delegates = ({ delegates, delegator }: DelegatesProps) => {
         <div className="delegates-wrapper">
           {delegatesList.map(({ delegate, proxyType }, i) => (
             <AccountButton
-              key={i}
+              key={`_del_${i}`}
               address={delegate}
               delegator={delegator}
               proxyType={proxyType}

@@ -22,7 +22,7 @@ export const generateTypeExports = (folderPath, outputFilePath) => {
             .replace(/\\/g, "/")
             .replace(".ts", "");
           exportedTypes.push(
-            `export { ${matches[2]} } from "../${relativePath}";`
+            `export { ${matches[2]} } from "../${relativePath}";`,
           );
         }
       }

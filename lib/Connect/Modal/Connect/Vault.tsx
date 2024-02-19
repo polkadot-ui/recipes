@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useOverlay } from "@polkadot-ui/react/overlay/OverlayProvider/useOverlay";
 
 import {
+  Button,
   ModalConnectItem,
   ModalHardwareItem,
   Button,

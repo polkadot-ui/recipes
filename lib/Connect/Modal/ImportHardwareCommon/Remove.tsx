@@ -9,7 +9,7 @@ import type { RemoveProps } from "./types";
 import "@polkadot-ui/core/css/recipes/Connect/Modal/ImportHardwareCommon/index.css";
 
 // eslint-disable-next-line import/no-unresolved
-import "./index.css";
+import "./index.scss";
 
 export const Remove = ({ address, getHandler, removeHandler }: RemoveProps) => {
   const { setStatus } = usePrompt();

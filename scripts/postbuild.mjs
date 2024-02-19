@@ -11,10 +11,10 @@ const main = async () => {
     (error, _, stderr) => {
       error && console.log(`❌: ${error.message}`);
       stderr && console.log(`❌: ${stderr}`);
-    }
+    },
   );
 
-  // Rmmove generated content.
+  // Remove generated content.
   const pathsToRemove = [
     { path: "./lib/index.tsx", options: {} },
     { path: "./lib/types", options: { recursive: true, force: true } },

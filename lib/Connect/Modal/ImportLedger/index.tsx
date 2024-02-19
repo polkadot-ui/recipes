@@ -17,9 +17,6 @@ import { Manage } from "./Manage";
 import { Splash } from "./Splash";
 import { useConnectConfig } from "../../Providers/ConnectConfigProvider";
 
-// eslint-disable-next-line import/no-unresolved
-import "./index.css";
-
 export const ImportLedger = () => {
   const { network } = useConnectConfig();
   const { setModalResize } = useOverlay().modal;
@@ -58,7 +55,7 @@ export const ImportLedger = () => {
 
   // Store addresses retreived from Ledger device. Defaults to local addresses.
   const [addresses, setAddresses] = useState<LedgerAddress[]>(
-    getLocalLedgerAddresses(network)
+    getLocalLedgerAddresses(network),
   );
   const addressesRef = useRef(addresses);
 
@@ -79,13 +76,13 @@ export const ImportLedger = () => {
     } else {
       localStorage.setItem(
         "ledger_addresses",
-        JSON.stringify(newLedgerAddresses)
+        JSON.stringify(newLedgerAddresses),
       );
     }
     setStateWithRef(
       newLedgerAddresses.filter((a: LedgerAddress) => a.network === network),
       setAddresses,
-      addressesRef
+      addressesRef,
     );
   };
 
@@ -94,7 +91,7 @@ export const ImportLedger = () => {
     setStateWithRef(
       getLocalLedgerAddresses(network),
       setAddresses,
-      addressesRef
+      addressesRef,
     );
   }, [network]);
 
@@ -134,7 +131,7 @@ export const ImportLedger = () => {
       setStateWithRef(
         newAddresses.filter((a) => a.network === network),
         setAddresses,
-        addressesRef
+        addressesRef,
       );
       resetStatusCodes();
     }

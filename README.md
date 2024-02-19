@@ -2,24 +2,5 @@
 
 # Polkadot UI: Recipes
 
-Functional React Recipes for Polkadot dapps.
+Example functional components derived from the Polkadot Cloud library.
 
-## Managing the Package
-
-#### Start the development server for real-time component feedback.
-
-```
-yarn dev
-```
-
-#### Build the package into an optimised Rollup build.
-
-```
-yarn build
-```
-
-#### Publish the package to NPM.
-
-```
-cd dist && npm publish --access public
-```

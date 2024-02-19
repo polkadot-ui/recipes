@@ -36,7 +36,7 @@ import { useConnectConfig } from "../../Providers/ConnectConfigProvider";
 import "@polkadot-ui/core/css/recipes/Connect/Modal/Connect/index.css";
 
 // eslint-disable-next-line import/no-unresolved
-import "./index.css";
+import "./index.scss";
 
 export const Connect = () => {
   const { wallets } = useConnectConfig();
@@ -55,7 +55,7 @@ export const Connect = () => {
     !proxiesActive
   ) {
     throw new Error(
-      "All possible wallet options (web, hardware and dev) are inactive!"
+      "All possible wallet options (web, hardware and dev) are inactive!",
     );
   }
 
@@ -67,7 +67,7 @@ export const Connect = () => {
   const pjs = ExtensionsArray.filter((a) => a.id === "polkadot-js");
 
   const installed = web.filter((a) =>
-    Object.keys(extensionsStatus).find((key) => key === a.id)
+    Object.keys(extensionsStatus).find((key) => key === a.id),
   );
   const other = web.filter((a) => !installed.find((b) => b.id === a.id));
 
@@ -92,7 +92,7 @@ export const Connect = () => {
     height += Math.max(
       homeRef.current?.clientHeight || 0,
       readOnlyRef.current?.clientHeight || 0,
-      proxiesRef.current?.clientHeight || 0
+      proxiesRef.current?.clientHeight || 0,
     );
     setModalHeight(height);
   };
@@ -222,7 +222,10 @@ export const Connect = () => {
                   <div className="extensions-wrapper">
                     <SelectItems layout="two-col">
                       {installed.concat(other).map((extension, i) => (
-                        <Extension key={i} meta={extension} />
+                        <Extension
+                          key={`extension_item_${i}`}
+                          meta={extension}
+                        />
                       ))}
                     </SelectItems>
                   </div>
@@ -234,7 +237,10 @@ export const Connect = () => {
                   <div className="extensions-wrapper">
                     <SelectItems layout="two-col">
                       {pjs.map((extension, i) => (
-                        <Extension key={i} meta={extension} />
+                        <Extension
+                          key={`extension_item_${i}`}
+                          meta={extension}
+                        />
                       ))}
                     </SelectItems>
                   </div>

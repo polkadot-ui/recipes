@@ -5,7 +5,7 @@ import { usePrompt } from "../../Providers/PromptProvider";
 import "@polkadot-ui/core/css/recipes/Connect/Modal/Prompt/index.css";
 
 // eslint-disable-next-line import/no-unresolved
-import "./index.css";
+import "./index.scss";
 
 export const Prompt = () => {
   const { closePrompt, size, status, Prompt: PromptInner } = usePrompt();

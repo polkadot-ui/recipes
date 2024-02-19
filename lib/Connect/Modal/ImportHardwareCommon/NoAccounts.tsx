@@ -10,7 +10,7 @@ import { Any } from "@polkadot-ui/react/utils/types";
 import "@polkadot-ui/core/css/recipes/Connect/Modal/ImportHardwareCommon/index.css";
 
 // eslint-disable-next-line import/no-unresolved
-import "./index.css";
+import "./index.scss";
 
 export const NoAccounts = ({ children, text, Icon }: Any) => {
   const { replaceModal } = useOverlay().modal;

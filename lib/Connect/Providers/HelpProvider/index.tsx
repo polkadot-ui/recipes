@@ -75,7 +75,7 @@ export const HelpProvider = ({ children }: HelpContextProps) => {
 };
 
 export const HelpContext = createContext<HelpContextInterface>(
-  defaults.defaultHelpContext
+  defaults.defaultHelpContext,
 );
 
 export const useHelp = () => useContext(HelpContext);

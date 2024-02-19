@@ -14,7 +14,7 @@ import { useConnectConfig } from "../../../Providers/ConnectConfigProvider";
 
 import "@polkadot-ui/core/css/recipes/Connect/Modal/Connect/AccountInput/index.css";
 // eslint-disable-next-line import/no-unresolved
-import "./index.css";
+import "./index.scss";
 
 export const AccountInput = ({
   successCallback,
@@ -64,7 +64,7 @@ export const AccountInput = ({
     }
     // check address already imported
     const alreadyImported = accounts.find(
-      (a) => a.address.toUpperCase() === newValue.toUpperCase()
+      (a) => a.address.toUpperCase() === newValue.toUpperCase(),
     );
     if (alreadyImported !== undefined && disallowAlreadyImported) {
       setValid("already_imported");

@@ -18,7 +18,7 @@
 
 # Polkadot UI: Recipes
 
-**Functional React Recipes for Polkadot dapps.**
+**Example functional components derived from the Polkadot Cloud library.**
 
 ## Docs
 

@@ -61,7 +61,7 @@ export const Reader = () => {
             : vaultAccountExists(qrData)
               ? `Account Already Imported`
               : `Address Received`
-          : `Invalid Address`
+          : `Invalid Address`,
     );
   }, [qrData]);
 

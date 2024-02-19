@@ -15,7 +15,7 @@ const ScanSignature = ({
   const onScanCallback = useCallback(
     (signature: string | null) =>
       signature && onScan({ signature: `0x${signature}` }),
-    [onScan]
+    [onScan],
   );
 
   return (

@@ -52,7 +52,9 @@ export const BondedProvider = ({ children }: { children: ReactNode }) => {
       });
 
       unsubs.current = Object.fromEntries(
-        Object.entries(unsubs.current).filter(([key]) => !removed.includes(key))
+        Object.entries(unsubs.current).filter(
+          ([key]) => !removed.includes(key),
+        ),
       );
     };
     // Sync added accounts.
@@ -66,7 +68,7 @@ export const BondedProvider = ({ children }: { children: ReactNode }) => {
       setStateWithRef(
         matchedProperties(accounts, bondedAccountsRef.current, ["address"]),
         setBondedAccounts,
-        bondedAccountsRef
+        bondedAccountsRef,
       );
     };
     handleRemovedAccounts();
@@ -87,7 +89,7 @@ export const BondedProvider = ({ children }: { children: ReactNode }) => {
       Object.values(unsubs.current).forEach((unsub) => {
         unsub();
       }),
-    []
+    [],
   );
 
   // TODO: CHECK the API needs
@@ -175,7 +177,7 @@ export const BondedProvider = ({ children }: { children: ReactNode }) => {
 };
 
 export const BondedContext = createContext<BondedContextInterface>(
-  defaults.defaultBondedContext
+  defaults.defaultBondedContext,
 );
 
 export const useBonded = () => useContext(BondedContext);

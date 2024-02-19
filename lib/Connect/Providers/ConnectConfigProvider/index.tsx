@@ -25,45 +25,29 @@ export const ConnectConfigProvider = ({
 
   const [dappName] = useState<string>(dappInfo.dappName);
   const [network, setNetwork] = useState<string>(
-    dappInfo.network || "polkadot"
+    dappInfo.network || "polkadot",
   );
   const [ss58, setSs58] = useState<number>(dappInfo.ss58 || 0);
   const [hardwareActive] = useState<boolean>(
-    wallets?.hardwareActive === undefined ? true : wallets?.hardwareActive
+    wallets?.hardwareActive === undefined ? true : wallets?.hardwareActive,
   );
   const [webActive] = useState<boolean>(
-    wallets?.webActive === undefined ? true : wallets?.webActive
+    wallets?.webActive === undefined ? true : wallets?.webActive,
   );
   const [devActive] = useState<boolean>(
-    wallets?.devActive === undefined ? true : wallets?.devActive
+    wallets?.devActive === undefined ? true : wallets?.devActive,
   );
   const [readOnlyActive] = useState<boolean>(
-    wallets?.readOnlyActive === undefined ? true : wallets?.readOnlyActive
+    wallets?.readOnlyActive === undefined ? true : wallets?.readOnlyActive,
   );
   const [proxiesActive] = useState<boolean>(
-    wallets?.proxiesActive === undefined ? true : wallets?.proxiesActive
+    wallets?.proxiesActive === undefined ? true : wallets?.proxiesActive,
   );
 
   useEffect(() => {
     setNetwork(dappInfo.network);
     setSs58(dappInfo.ss58);
   }, [dappInfo]);
-
-  console.log(
-    "---- ",
-    JSON.stringify(
-      "hardwareActive: " +
-        hardwareActive +
-        " _ " +
-        webActive +
-        " _ " +
-        devActive +
-        " _ " +
-        readOnlyActive +
-        " _ " +
-        proxiesActive
-    )
-  );
 
   return (
     <ConnectConfigContext.Provider
@@ -90,7 +74,7 @@ export const ConnectConfigProvider = ({
 
 export const ConnectConfigContext =
   createContext<ConnectConfigContextInterface>(
-    defaults.defaultConnectConfigContext
+    defaults.defaultConnectConfigContext,
   );
 
 export const useConnectConfig = () => useContext(ConnectConfigContext);

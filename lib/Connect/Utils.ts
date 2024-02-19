@@ -15,14 +15,14 @@ export const addToLocalExtensions = (id: string) => {
   const localExtensions = localStorageOrDefault<string[]>(
     `active_extensions`,
     [],
-    true
+    true,
   );
   if (Array.isArray(localExtensions)) {
     if (!localExtensions.includes(id)) {
       localExtensions.push(id);
       localStorage.setItem(
         "active_extensions",
-        JSON.stringify(localExtensions)
+        JSON.stringify(localExtensions),
       );
     }
   }
@@ -47,7 +47,7 @@ export const getLocalExternalAccounts = (network?: NetworkName) => {
   let localAccounts = localStorageOrDefault<ExternalAccount[]>(
     "external_accounts",
     [],
-    true
+    true,
   ) as ExternalAccount[];
   if (network) {
     localAccounts = localAccounts.filter((l) => l.network === network);
@@ -58,13 +58,14 @@ export const getLocalExternalAccounts = (network?: NetworkName) => {
 // gets accounts that exist in local `external_accounts`
 export const getInExternalAccounts = (
   accounts: ExtensionAccount[],
-  network: NetworkName
+  network: NetworkName,
 ) => {
   const localExternalAccounts = getLocalExternalAccounts(network);
 
   return (
     localExternalAccounts.filter(
-      (a) => (accounts || []).find((b) => b.address === a.address) !== undefined
+      (a) =>
+        (accounts || []).find((b) => b.address === a.address) !== undefined,
     ) || []
   );
 };
@@ -72,7 +73,7 @@ export const getInExternalAccounts = (
 // removes supplied accounts from local `external_accounts`.
 export const removeLocalExternalAccounts = (
   network: NetworkName,
-  accounts: ExternalAccount[]
+  accounts: ExternalAccount[],
 ) => {
   if (!accounts.length) return;
 
@@ -80,11 +81,11 @@ export const removeLocalExternalAccounts = (
   localExternalAccounts = localExternalAccounts.filter(
     (a) =>
       accounts.find((b) => b.address === a.address && a.network === network) ===
-      undefined
+      undefined,
   );
   localStorage.setItem(
     "external_accounts",
-    JSON.stringify(localExternalAccounts)
+    JSON.stringify(localExternalAccounts),
   );
 };
 
