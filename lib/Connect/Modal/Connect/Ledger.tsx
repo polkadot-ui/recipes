@@ -18,7 +18,7 @@ import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOve
 import { ReactElement } from "react";
 import { useConnectConfig } from "../../Providers/ConnectConfigProvider";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Connect/index.css";
+import "./index.scss";
 
 export const Ledger = (): ReactElement => {
   const { network } = useConnectConfig();

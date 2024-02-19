@@ -7,14 +7,14 @@ import { exec } from "child_process";
 const main = async () => {
   // Generate package.json and inject.
   exec(
-    "node ./scripts/generatePackageJson.mjs -p cloud-recipes -m index.js",
+    "node ./scripts/builder/run.mjs -t package:build -p cloud-recipes -m index.js",
     (error, _, stderr) => {
       error && console.log(`❌: ${error.message}`);
       stderr && console.log(`❌: ${stderr}`);
-    }
+    },
   );
 
-  // Rmmove generated content.
+  // Remove generated content.
   const pathsToRemove = [
     { path: "./lib/index.tsx", options: {} },
     { path: "./lib/types", options: { recursive: true, force: true } },

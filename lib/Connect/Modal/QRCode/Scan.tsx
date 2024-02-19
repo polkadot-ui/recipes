@@ -6,9 +6,6 @@ import QrReader from "react-qr-reader";
 import type { ScanProps } from "./types";
 import { createImgSize } from "./util";
 
-// eslint-disable-next-line import/no-unresolved
-import "./index.css";
-
 const DEFAULT_DELAY = 150;
 
 const DEFAULT_ERROR = (error: Error): void => {
@@ -27,12 +24,12 @@ const Scan = ({
 
   const onErrorCallback = useCallback(
     (error: Error) => onError(error),
-    [onError]
+    [onError],
   );
 
   const onScanCallback = useCallback(
     (data: string | null) => data && onScan(data),
-    [onScan]
+    [onScan],
   );
 
   return (

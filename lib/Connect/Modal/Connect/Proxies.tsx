@@ -22,8 +22,8 @@ export const Proxies = ({ setInputOpen, inputOpen }: ListWithInputProps) => {
   // Filter delegates to only show those who are imported in the dashboard.
   const importedDelegates = Object.fromEntries(
     Object.entries(delegates).filter(([delegate]) =>
-      accounts.find((a) => a.address === delegate)
-    )
+      accounts.find((a) => a.address === delegate),
+    ),
   );
   return (
     <>
@@ -87,7 +87,7 @@ export const Proxies = ({ setInputOpen, inputOpen }: ListWithInputProps) => {
                       </div>
                     ))}
                   </Fragment>
-                )
+                ),
               )}
             </div>
           ) : (

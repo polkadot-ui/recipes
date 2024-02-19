@@ -54,7 +54,7 @@ export const connectInfo = (appInfo: DappInfo, connInfo?: ConnectType) => {
       dappName: appInfo.dappName,
       activeAccount,
       setActiveAccount,
-    })
+    }),
   );
   providers.push(provider(OtherAccountsProvider));
   providers.push(provider(ImportedAccountsProvider));

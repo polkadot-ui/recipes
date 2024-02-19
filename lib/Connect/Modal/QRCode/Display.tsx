@@ -15,13 +15,10 @@ import { qrcode } from "./qrcode.js";
 import type { DisplayProps, FrameState, TimerState } from "./types.js";
 import { createFrames, createImgSize } from "./util.js";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/QRCode/index.css";
+import "./index.scss";
 
 const DEFAULT_FRAME_DELAY = 2750;
 const TIMER_INC = 500;
-
-// eslint-disable-next-line import/no-unresolved
-import "./index.css";
 
 const getDataUrl = (value: Uint8Array): string => {
   const qr = qrcode(0, "M");
@@ -80,7 +77,7 @@ const Display = ({
         // set the new timer last
         timerRef.current.timerId = setTimeout(
           nextFrame,
-          timerRef.current.timerDelay
+          timerRef.current.timerDelay,
         );
 
         return newState;
@@ -88,7 +85,7 @@ const Display = ({
 
     timerRef.current.timerId = setTimeout(
       nextFrame,
-      timerRef.current.timerDelay
+      timerRef.current.timerDelay,
     );
 
     return () => {

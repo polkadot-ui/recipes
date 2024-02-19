@@ -10,7 +10,7 @@ export interface ActiveAccountsContextInterface {
   getActiveAccount: () => string | null;
   setActiveAccount: (
     address: MaybeAddress,
-    updateLocalStorage?: boolean
+    updateLocalStorage?: boolean,
   ) => void;
   setActiveProxy: (address: ActiveProxy, updateLocalStorage?: boolean) => void;
 }

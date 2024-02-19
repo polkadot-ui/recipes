@@ -32,7 +32,7 @@ export const ActiveAccountsProvider = ({
       if (newActiveProxy) {
         localStorage.setItem(
           `${network}_active_proxy`,
-          JSON.stringify(newActiveProxy)
+          JSON.stringify(newActiveProxy),
         );
       } else {
         localStorage.removeItem(`${network}_active_proxy`);
@@ -43,7 +43,7 @@ export const ActiveAccountsProvider = ({
   // Setter for the active account.
   const setActiveAccount = (
     newActiveAccount: MaybeAddress,
-    updateLocalStorage = true
+    updateLocalStorage = true,
   ) => {
     if (updateLocalStorage)
       if (newActiveAccount === null)

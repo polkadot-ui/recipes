@@ -26,7 +26,7 @@ export const createSignPayload = (
   address: string,
   cmd: number,
   payload: string | Uint8Array,
-  genesisHash: string | Uint8Array
+  genesisHash: string | Uint8Array,
 ): Uint8Array =>
   u8aConcat(
     SUBSTRATE_ID,
@@ -34,7 +34,7 @@ export const createSignPayload = (
     new Uint8Array([cmd]),
     decodeAddress(address),
     u8aToU8a(payload),
-    u8aToU8a(genesisHash)
+    u8aToU8a(genesisHash),
   );
 
 export const createFrames = (input: Uint8Array): Uint8Array[] => {
@@ -53,13 +53,13 @@ export const createFrames = (input: Uint8Array): Uint8Array[] => {
         MULTIPART,
         encodeNumber(frames.length),
         encodeNumber(index),
-        frame
-      )
+        frame,
+      ),
   );
 };
 
 export const createImgSize = (
-  size?: string | number
+  size?: string | number,
 ): Record<string, string> => {
   if (!size) {
     return {

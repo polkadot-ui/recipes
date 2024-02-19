@@ -15,7 +15,7 @@ import {
 } from "@polkadot-cloud/utils";
 import { useRef, useState, ReactNode, createContext, useContext } from "react";
 import { isSupportedProxy } from "./proxies";
-import { useEffectIgnoreInitial } from "@polkadot-cloud/react/hooks";
+import { useEffectIgnoreInitial } from "@polkadot-cloud/react";
 import { useActiveAccounts } from "../ActiveAccountsProvider";
 import { useImportedAccounts } from "../ImportedAccountsProvider";
 import { useOtherAccounts } from "../OtherAccountsProvider";
@@ -68,7 +68,9 @@ export const ProxiesProvider = ({ children }: { children: ReactNode }) => {
       });
 
       unsubs.current = Object.fromEntries(
-        Object.entries(unsubs.current).filter(([key]) => !removed.includes(key))
+        Object.entries(unsubs.current).filter(
+          ([key]) => !removed.includes(key),
+        ),
       );
     };
     // Sync added accounts.
@@ -83,7 +85,7 @@ export const ProxiesProvider = ({ children }: { children: ReactNode }) => {
       setStateWithRef(
         matchedProperties(accounts, proxiesRef.current, ["address"]),
         setProxies,
-        proxiesRef
+        proxiesRef,
       );
     };
     handleRemovedAccounts();
@@ -163,7 +165,7 @@ export const ProxiesProvider = ({ children }: { children: ReactNode }) => {
   // Gets the delegates and proxy type of an account, if any.
   const getProxyDelegate = (
     delegator: MaybeAddress,
-    delegate: MaybeAddress
+    delegate: MaybeAddress,
   ): ProxyDelegate | null =>
     proxiesRef.current
       .find((p) => p.delegator === delegator)
@@ -181,7 +183,7 @@ export const ProxiesProvider = ({ children }: { children: ReactNode }) => {
   useEffectIgnoreInitial(() => {
     const localActiveProxy = localStorageOrDefault(
       `${network}_active_proxy`,
-      null
+      null,
     );
 
     if (!localActiveProxy) {
@@ -201,7 +203,7 @@ export const ProxiesProvider = ({ children }: { children: ReactNode }) => {
 
         const isActive = (
           proxiesRef.current.find(
-            ({ delegator }) => delegator === activeAccount
+            ({ delegator }) => delegator === activeAccount,
           )?.delegates || []
         ).find((d) => d.delegate === address && d.proxyType === proxyType);
         if (isActive) {
@@ -300,7 +302,7 @@ export const ProxiesProvider = ({ children }: { children: ReactNode }) => {
 };
 
 export const ProxiesContext = createContext<ProxiesContextInterface>(
-  defaults.defaultProxiesContext
+  defaults.defaultProxiesContext,
 );
 
 export const useProxies = () => useContext(ProxiesContext);

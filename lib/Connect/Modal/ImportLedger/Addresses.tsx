@@ -14,7 +14,7 @@ import { Remove } from "../ImportHardwareCommon/Remove";
 import type { AnyJson } from "@polkadot-cloud/react/utils/types";
 import { useOtherAccounts } from "../../Providers/OtherAccountsProvider";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/ImportHardwareCommon/index.css";
+import "./index.scss";
 
 export const Addresess = ({
   addresses,
@@ -43,7 +43,7 @@ export const Addresess = ({
   const openConfirmHandler = (address: string, index: number) => {
     openPromptWith(
       <Confirm address={address} index={index} addHandler={addLedgerAccount} />,
-      "small"
+      "small",
     );
   };
 
@@ -54,7 +54,7 @@ export const Addresess = ({
         removeHandler={removeLedgerAccount}
         getHandler={getLedgerAccount}
       />,
-      "small"
+      "small",
     );
   };
 
@@ -65,7 +65,7 @@ export const Addresess = ({
           {addresses.map(({ address, index }: AnyJson, i: number) => {
             const initialName = (() => {
               const localAddress = getLocalLedgerAddresses().find(
-                (a) => a.address === address && a.network === network
+                (a) => a.address === address && a.network === network,
               );
               return localAddress?.name
                 ? unescape(localAddress.name)

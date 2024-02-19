@@ -40,7 +40,7 @@ export const Manage = ({
         handleReset={() => {
           openPromptWith(
             <Reset removeLedgerAddress={removeLedgerAddress} />,
-            "small"
+            "small",
           );
         }}
       />

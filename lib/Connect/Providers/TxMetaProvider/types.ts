@@ -7,7 +7,7 @@ import type { AnyJson, MaybeAddress } from "@polkadot-cloud/react/utils/types";
 export interface TxMetaContextInterface {
   controllerSignerAvailable: (
     a: MaybeAddress,
-    b: boolean
+    b: boolean,
   ) => "controller_not_imported" | "read_only" | "ok";
   txFees: BigNumber;
   notEnoughFunds: boolean;

@@ -5,10 +5,8 @@ import type { ReactNode } from "react";
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { useEffectIgnoreInitial } from "@polkadot-cloud/react";
 
-import {
-  useExtensions,
-  useExtensionAccounts,
-} from "@polkadot-cloud/react/hooks";
+import { useExtensions } from "@polkadot-cloud/react/connect/ExtensionsProvider/useExtensions";
+import { useExtensionAccounts } from "@polkadot-cloud/react/connect/ExtensionAccountsProvider/useExtensionAccounts";
 
 import {
   getLocalLedgerAccounts,
@@ -82,10 +80,10 @@ export const OtherAccountsProvider = ({
       setStateWithRef(
         [...otherAccountsRef.current].filter(
           (a) =>
-            forget.find(({ address }) => address === a.address) === undefined
+            forget.find(({ address }) => address === a.address) === undefined,
         ),
         setOtherAccounts,
-        otherAccountsRef
+        otherAccountsRef,
       );
       // If the currently active account is being forgotten, disconnect.
       if (forget.find(({ address }) => address === activeAccount) !== undefined)
@@ -97,7 +95,7 @@ export const OtherAccountsProvider = ({
   // `accounts` state. if local active account is present, it will also be assigned as active.
   // Accounts are ignored if they are already imported through an extension.
   const importLocalOtherAccounts = (
-    getter: (n: NetworkName) => ImportedAccount[]
+    getter: (n: NetworkName) => ImportedAccount[],
   ) => {
     // Get accounts from provided `getter` function. The resulting array of accounts must contain an
     // `address` field.
@@ -107,15 +105,15 @@ export const OtherAccountsProvider = ({
       const activeAccountInSet =
         localAccounts.find(
           ({ address }) =>
-            address === getActiveAccountLocal(network as NetworkName, ss58)
+            address === getActiveAccountLocal(network as NetworkName, ss58),
         ) ?? null;
 
       // remove already-imported accounts.
       localAccounts = localAccounts.filter(
         (l) =>
           otherAccountsRef.current.find(
-            ({ address }) => address === l.address
-          ) === undefined
+            ({ address }) => address === l.address,
+          ) === undefined,
       );
 
       // set active account for networkData.
@@ -136,17 +134,17 @@ export const OtherAccountsProvider = ({
           : {
               ...a,
               name: newName,
-            }
+            },
       ),
       setOtherAccounts,
-      otherAccountsRef
+      otherAccountsRef,
     );
   };
 
   // Adds an external account (non-wallet) to accounts.
   const addExternalAccount = (
     address: string,
-    addedBy: ExternalAccountAddedBy
+    addedBy: ExternalAccountAddedBy,
   ) => {
     // ensure account is formatted correctly
     const keyring = new Keyring();
@@ -164,20 +162,20 @@ export const OtherAccountsProvider = ({
     // get all external accounts from localStorage.
     const localExternalAccounts = getLocalExternalAccounts();
     const existsLocal = localExternalAccounts.find(
-      (l) => l.address === address && l.network === network
+      (l) => l.address === address && l.network === network,
     );
 
     // check that address is not sitting in imported accounts (currently cannot check which
     // network).
     const existsImported = otherAccountsRef.current.find(
-      (a) => a.address === address
+      (a) => a.address === address,
     );
 
     // add external account if not there already.
     if (!existsLocal && !existsImported) {
       localStorage.setItem(
         "external_accounts",
-        JSON.stringify(localExternalAccounts.concat(newAccount))
+        JSON.stringify(localExternalAccounts.concat(newAccount)),
       );
 
       // add external account to imported accounts
@@ -189,17 +187,17 @@ export const OtherAccountsProvider = ({
         "external_accounts",
         JSON.stringify(
           localExternalAccounts.map((item) =>
-            item.address !== address ? item : newAccount
-          )
-        )
+            item.address !== address ? item : newAccount,
+          ),
+        ),
       );
       // re-sync account state.
       setStateWithRef(
         [...otherAccountsRef.current].map((item) =>
-          item.address !== newAccount.address ? item : newAccount
+          item.address !== newAccount.address ? item : newAccount,
         ),
         setOtherAccounts,
-        otherAccountsRef
+        otherAccountsRef,
       );
     }
   };
@@ -209,7 +207,7 @@ export const OtherAccountsProvider = ({
     if (!forget.length) return;
     removeLocalExternalAccounts(
       network as NetworkName,
-      forget.filter((i) => "network" in i) as ExternalAccount[]
+      forget.filter((i) => "network" in i) as ExternalAccount[],
     );
 
     // If the currently active account is being forgotten, disconnect.
@@ -239,7 +237,7 @@ export const OtherAccountsProvider = ({
     setStateWithRef(
       [...otherAccountsRef.current].concat(a),
       setOtherAccounts,
-      otherAccountsRef
+      otherAccountsRef,
     );
   };
 

@@ -7,8 +7,23 @@ import { format } from "prettier";
 
 // Generates bundle entry files based on the content of the lib/ folder.
 //
-// - `lib/index.tsx` is generated to house all recipes exports.
+// - `lib/index.tsx` is generated to house all component exports.
+// - `lib/providers/index.tsx` is generated to house all provider exports.
+// - `lib/hooks/index.tsx` is generated to house all hook exports.
+// - `lib/types/index.tsx` is generated to house all types.
 export const generateExportEntries = async ({ ignore }) => {
+  // Rmmove stale folders if they exist.
+  const pathsToRemove = [
+    { path: "./lib/types.ts", options: {} },
+    { path: "./lib/providers", options: { recursive: true } },
+    { path: "./lib/hooks", options: { recursive: true } },
+  ];
+  await Promise.all(
+    pathsToRemove.map(({ path, options }) =>
+      existsSync(path) ? fs.rm(path, options) : Promise.resolve(),
+    ),
+  );
+
   // Iterates through a provided directory and returns all component paths.
   const getDirFolders = async (dir) => {
     const folders = [];
@@ -27,18 +42,23 @@ export const generateExportEntries = async ({ ignore }) => {
   };
 
   // Iterate through all files and construct entries.
-  const recipes = [];
+  const components = [];
   for (let name of await getDirFolders("./lib")) {
-    recipes.push({
-      export: name.split("/").pop(),
-      from: name,
-    });
+    let isComponent = true;
+
+    // If not provider or hook, add `name`'s index.tsx to component exports.
+    if (isComponent) {
+      components.push({
+        export: name.split("/").pop(),
+        from: name,
+      });
+    }
   }
 
   // Construct entry files.
   await writeFormattedFile(
     "./lib/index.tsx",
-    generateExportLines(recipes, "./")
+    generateExportLines(components, "./"),
   );
 };
 
@@ -50,7 +70,7 @@ const generateExportLines = (items, basePath) =>
         `export { ${item.export} } from "${basePath}${item.from
           .split("/")
           .slice(2)
-          .join("/")}";`
+          .join("/")}";`,
     )
     .join("\n");
 

@@ -5,16 +5,14 @@ import { faExternalLinkAlt, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
-import {
-  useExtensions,
-  useExtensionAccounts,
-} from "@polkadot-cloud/react/hooks";
+import { useExtensions } from "@polkadot-cloud/react/connect/ExtensionsProvider/useExtensions";
+import { useExtensionAccounts } from "@polkadot-cloud/react/connect/ExtensionAccountsProvider/useExtensionAccounts";
 import { useNotifications } from "../../Providers/NotificationsProvider/index";
 import { ExtensionIcons } from "@polkadot-cloud/assets/extensions";
 import type { ExtensionProps } from "./types";
 import { ModalConnectItem } from "@polkadot-cloud/react";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Connect/index.css";
+import "./index.scss";
 
 export const Extension = ({ meta, size, flag }: ExtensionProps) => {
   const { addNotification } = useNotifications();

@@ -9,7 +9,8 @@ const main = async () => {
   generateTypeExports("./lib", "./lib/types/index.ts");
 
   // Generate entry files.
-  await generateExportEntries({ ignore: ["styles", "svg", "utils"] });
+  // await generateExportEntries({ ignore: ["styles", "svg", "utils"] });
+  await generateExportEntries({ ignore: [] });
 };
 
 await main();

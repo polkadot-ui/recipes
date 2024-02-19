@@ -9,9 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "@polkadot-cloud/react";
 import type { HeadingProps } from "./types";
 
-// eslint-disable-next-line import/no-unresolved
-import "./index.css";
-
 export const Heading = ({
   connectTo,
   title,

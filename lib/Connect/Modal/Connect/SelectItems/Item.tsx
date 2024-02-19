@@ -6,7 +6,7 @@ import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { SelectItemProps } from "./types";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/Connect/SelectItems/index.css";
+import "./index.scss";
 
 export const SelectItem = ({
   title,

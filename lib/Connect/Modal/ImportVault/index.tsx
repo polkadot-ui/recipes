@@ -17,12 +17,12 @@ import { Confirm } from "../ImportHardwareCommon/Confirm";
 import { Heading } from "../ImportHardwareCommon/Heading";
 import { NoAccounts } from "../ImportHardwareCommon/NoAccounts";
 import { Remove } from "../ImportHardwareCommon/Remove";
-import type { AnyJson } from "@polkadot-cloud/utils/types";
+import type { AnyJson } from "@polkadot-cloud/react/utils/types";
 import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
 import { useOtherAccounts } from "../../Providers/OtherAccountsProvider";
 import { Reader } from "./Reader";
 
-import "@polkadot-cloud/core/css/recipes/Connect/Modal/ImportHardwareCommon/index.css";
+import "../ImportHardwareCommon/index.scss";
 
 export const ImportVault = () => {
   const { replaceModal } = useOverlay().modal;
@@ -47,7 +47,7 @@ export const ImportVault = () => {
   const openConfirmHandler = (address: string, index: number) => {
     openPromptWith(
       <Confirm address={address} index={index} addHandler={addVaultAccount} />,
-      "small"
+      "small",
     );
   };
 
@@ -58,7 +58,7 @@ export const ImportVault = () => {
         removeHandler={removeVaultAccount}
         getHandler={getVaultAccount}
       />,
-      "small"
+      "small",
     );
   };
 
