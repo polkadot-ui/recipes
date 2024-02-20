@@ -102,7 +102,7 @@
     "@zondax/ledger-substrate": "^0.41.3",
     "buffer": "^6.0.3",
     "compressed": "^1.0.0",
-    "esbuild-sass-plugin": "^2.16.0",
+    "esbuild-sass-plugin": "^3.0.0",
     "eslint": "^8.54.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^9.1.0",
