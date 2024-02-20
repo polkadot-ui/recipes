@@ -1,36 +1,36 @@
-name: Publish
+# name: Publish
 
-on:
-  push:
-    branches: [main]
+# on:
+#   push:
+#     branches: [main]
 
-jobs:
-  # Uses the above list of packages to check for new versions, and publishes them if they are new.
-  npm-publish:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: yarn install && yarn build:mock
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          registry-url: https://registry.npmjs.org
+# jobs:
+#   # Uses the above list of packages to check for new versions, and publishes them if they are new.
+#   npm-publish:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#       - run: yarn install && yarn build
+#       - uses: actions/setup-node@v4
+#         with:
+#           node-version: 18
+#           registry-url: https://registry.npmjs.org
 
-      # Check whether a package build is a new version.
-      - name: Check New Version From Build
-        id: check_new_version_build
-        uses: PostHog/check-package-version@v2
-        with:
-          path: "./dist"
+#       # Check whether a package build is a new version.
+#       - name: Check New Version From Build
+#         id: check_new_version_build
+#         uses: PostHog/check-package-version@v2
+#         with:
+#           path: "./dist"
 
-      # Build the package if new version is available.
-      - name: Build Package
-        if: steps.check_new_version_build.outputs.is-new-version == 'true'
-        run: yarn build
+#       # Build the package if new version is available.
+#       - name: Build Package
+#         if: steps.check_new_version_build.outputs.is-new-version == 'true'
+#         run: yarn build
 
-      # Publish a package build from `dist` folder. Only runs if the package is a new version.
-      - name: Publish Package From Build
-        if: steps.check_new_version_build.outputs.is-new-version == 'true'
-        run: cd dist && npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+#       # Publish a package build from `dist` folder. Only runs if the package is a new version.
+#       - name: Publish Package From Build
+#         if: steps.check_new_version_build.outputs.is-new-version == 'true'
+#         run: cd dist && npm publish
+#         env:
+#           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

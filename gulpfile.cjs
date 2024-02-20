@@ -1,4 +1,4 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
 // SPDX-License-Identifier: GPL-3.0-only
 
 /* eslint-disable @typescript-eslint/no-var-requires */

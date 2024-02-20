@@ -4,7 +4,7 @@ SPDX-License-Identifier: MIT */
 import { JSX, useEffect, useState } from "react";
 
 import { Grid, Card, Polkicon } from "@polkadot-ui/react";
-import { GridSizes } from "@polkadot-ui/react/base/types";
+import { GridItemsAlignment, GridJustify, GridSizes } from "@polkadot-ui/react/base/types";
 import { valEmpty } from "@polkadot-ui/react/utils";
 import { ellipsisFn } from "@polkadot-ui/utils";
 import {

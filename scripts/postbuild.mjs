@@ -6,13 +6,13 @@ import { exec } from "child_process";
 
 const main = async () => {
   // Generate package.json and inject.
-  exec(
-    "node ./scripts/generatePackageJson.mjs -p ui-recipes -m index.js",
-    (error, _, stderr) => {
-      error && console.log(`❌: ${error.message}`);
-      stderr && console.log(`❌: ${stderr}`);
-    },
-  );
+  // exec(
+  //   "node ./scripts/generatePackageJson.mjs -p ui-recipes -m index.js",
+  //   (error, _, stderr) => {
+  //     error && console.log(`❌: ${error.message}`);
+  //     stderr && console.log(`❌: ${stderr}`);
+  //   },
+  // );
 
   // Remove generated content.
   const pathsToRemove = [

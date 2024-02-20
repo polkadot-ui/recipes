@@ -1,4 +1,4 @@
-// Copyright 2023 @polkadot-cloud/recipes authors & contributors
+// Copyright 2023 @polkadot-ui/recipes authors & contributors
 // SPDX-License-Identifier: GPL-3.0-only
 
 import { defineConfig } from "tsup";

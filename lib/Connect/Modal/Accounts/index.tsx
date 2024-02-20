@@ -8,15 +8,14 @@ import { faChevronLeft, faLinkSlash } from "@fortawesome/free-solid-svg-icons";
 //   ButtonText,
 //   ModalCustomHeader,
 //   ModalPadding,
-// } from "@polkadot-cloud/react";
+// } from "@polkadot-ui/react";
 import { Fragment, useEffect, useState } from "react";
 
 import {
   ActionItem,
-  useEffectIgnoreInitial,
+  ModalCustomHeader,
   ModalPadding,
 } from "@polkadot-ui/react";
-import { Fragment, useEffect, useState } from "react";
 
 // TODO: No idea what to do
 // import { useBalances } from "contexts/Balances";
@@ -154,7 +153,7 @@ export const Accounts = () => {
       <ModalCustomHeader>
         <div className="first">
           <h1>Accounts</h1>
-          <Button
+          {/* TODO: FIX BUTTON <Button
             type="primaryInvert"
             text="Go To Connect"
             iconLeft={faChevronLeft}
@@ -163,10 +162,11 @@ export const Accounts = () => {
               replaceModal({ key: "Connect", options: { disableScroll: true } })
             }
             marginLeft
-          />
+          /> */}
         </div>
         <div>
-          {activeAccount && (
+
+          {/* TODO: FIX BUTTON {activeAccount && (
             <Button
               type="text"
               style={{
@@ -179,7 +179,7 @@ export const Accounts = () => {
                 setActiveProxy(null);
               }}
             />
-          )}
+          )} */}
         </div>
       </ModalCustomHeader>
       {!activeAccount && !accounts.length && (

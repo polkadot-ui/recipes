@@ -1,10 +1,10 @@
-// Copyright 2023 @polkadot-cloud/recipes authors & contributors
+// Copyright 2023 @polkadot-ui/recipes authors & contributors
 // SPDX-License-Identifier: GPL-3.0-only
 
 // ----------------------------
 // Package scope to publish to.
 // ----------------------------
-export const PACKAGE_SCOPE = "polkadot-cloud";
+export const PACKAGE_SCOPE = "polkadot-ui";
 
 // ----------------------------
 // Package build output folder.
@@ -25,7 +25,7 @@ export const PACKAGE_REQUIRED_FILES = [
 // --------------------------------------------------------------------
 // Scripts that are required to exist in a package's package.json file.
 // --------------------------------------------------------------------
-export const PACKAGE_REQUIRED_SCRIPTS = ["build:mock", "build", "clear"];
+export const PACKAGE_REQUIRED_SCRIPTS = ["build", "clear"];
 
 // --------------------------------------------------------------
 // Required package.json properties to copy to the package build.

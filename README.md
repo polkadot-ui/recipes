@@ -2,5 +2,5 @@
 
 # Polkadot UI: Recipes
 
-Example functional components derived from the Polkadot Cloud library.
+Example functional components derived from the Polkadot UI library.
 
