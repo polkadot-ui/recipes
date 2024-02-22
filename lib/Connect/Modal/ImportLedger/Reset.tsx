@@ -1,16 +1,16 @@
-/* @license Copyright 2024 @polkadot-cloud/recipes authors & contributors
-SPDX-License-Identifier: GPL-3.0-only */
+/* @license Copyright 2024 @polkadot-ui/recipes authors & contributors
+SPDX-License-Identifier: MIT */
 
-import { Button } from "@polkadot-cloud/react";
+import { Button } from "@polkadot-ui/react";
 import { useLedgerHardware } from "../../Providers/HardwareProviders/Ledger";
 import { getLocalLedgerAddresses } from "../../Providers/HardwareProviders/Utils";
 import type { LedgerAddress } from "../../Providers/HardwareProviders/types";
 import { usePrompt } from "../../Providers/PromptProvider";
 
-import type { AnyJson } from "@polkadot-cloud/react/utils/types";
-import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
+import type { AnyJson } from "@polkadot-ui/react/utils/types";
+import { useOverlay } from "@polkadot-ui/react/overlay/OverlayProvider/useOverlay";
 import { useOtherAccounts } from "../../Providers/OtherAccountsProvider";
-import type { LedgerAccount } from "@polkadot-cloud/react/connect/types";
+import type { LedgerAccount } from "@polkadot-ui/react/connect/types";
 
 import "./index.scss";
 

@@ -1,5 +1,5 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { isString, u8aConcat, u8aToU8a } from "@polkadot/util";
 import { decodeAddress } from "@polkadot/util-crypto";

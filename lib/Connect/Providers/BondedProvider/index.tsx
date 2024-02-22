@@ -1,13 +1,13 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 /* eslint-disable no-unused-vars, @typescript-eslint/no-unused-vars */
 
-import type { VoidFn, MaybeAddress } from "@polkadot-cloud/react/utils/types";
+import type { VoidFn, MaybeAddress } from "@polkadot-ui/react/utils/types";
 import {
   matchedProperties,
   removedFrom,
   setStateWithRef,
-} from "@polkadot-cloud/utils";
+} from "@polkadot-ui/utils";
 import {
   useEffect,
   useRef,

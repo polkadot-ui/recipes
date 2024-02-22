@@ -1,5 +1,5 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import fs, { existsSync } from "fs";
 import { exec } from "child_process";
@@ -7,7 +7,7 @@ import { exec } from "child_process";
 const main = async () => {
   // Generate package.json and inject.
   exec(
-    "node ./scripts/builder/run.mjs -t package:build -p cloud-recipes -m index.js",
+    "node ./scripts/builder/run.mjs -t package:build -p ui-recipes -m index.js",
     (error, _, stderr) => {
       error && console.log(`❌: ${error.message}`);
       stderr && console.log(`❌: ${stderr}`);

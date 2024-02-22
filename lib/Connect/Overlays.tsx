@@ -1,4 +1,4 @@
-import { Overlay } from "@polkadot-cloud/react/overlay/Overlay";
+import { Overlay } from "@polkadot-ui/react/overlay/Overlay";
 import { Accounts } from "./Modal/Accounts";
 import { Connect } from "./Modal/Connect";
 import { ImportLedger } from "./Modal/ImportLedger";

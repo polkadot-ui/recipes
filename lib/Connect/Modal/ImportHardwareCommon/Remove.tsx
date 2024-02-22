@@ -1,7 +1,7 @@
-/* @license Copyright 2024 @polkadot-cloud/recipes authors & contributors
-SPDX-License-Identifier: GPL-3.0-only */
+/* @license Copyright 2024 @polkadot-ui/recipes authors & contributors
+SPDX-License-Identifier: MIT */
 
-import { Button, Polkicon } from "@polkadot-cloud/react";
+import { Button, Polkicon } from "@polkadot-ui/react";
 import { usePrompt } from "../../Providers/PromptProvider";
 import { useOtherAccounts } from "../../Providers/OtherAccountsProvider";
 import type { RemoveProps } from "./types";

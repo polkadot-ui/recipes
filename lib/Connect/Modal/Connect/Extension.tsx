@@ -1,16 +1,16 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { faExternalLinkAlt, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
-import { useExtensions } from "@polkadot-cloud/react/connect/ExtensionsProvider/useExtensions";
-import { useExtensionAccounts } from "@polkadot-cloud/react/connect/ExtensionAccountsProvider/useExtensionAccounts";
+import { useExtensions } from "@polkadot-ui/react/connect/ExtensionsProvider/useExtensions";
+import { useExtensionAccounts } from "@polkadot-ui/react/connect/ExtensionAccountsProvider/useExtensionAccounts";
 import { useNotifications } from "../../Providers/NotificationsProvider/index";
-import { ExtensionIcons } from "@polkadot-cloud/assets/extensions";
+import { ExtensionIcons } from "@polkadot-ui/assets/extensions";
 import type { ExtensionProps } from "./types";
-import { ModalConnectItem } from "@polkadot-cloud/react";
+import { ModalConnectItem } from "@polkadot-ui/react";
 
 import "./index.scss";
 

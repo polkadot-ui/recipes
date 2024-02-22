@@ -1,7 +1,7 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
-import { ellipsisFn, setStateWithRef } from "@polkadot-cloud/utils";
+import { ellipsisFn, setStateWithRef } from "@polkadot-ui/utils";
 import {
   createContext,
   useContext,
@@ -10,7 +10,7 @@ import {
   useRef,
   useState,
 } from "react";
-import type { VaultAccount } from "@polkadot-cloud/react/connect/types";
+import type { VaultAccount } from "@polkadot-ui/react/connect/types";
 import { getLocalVaultAccounts, isLocalNetworkAddress } from "./Utils";
 import { defaultVaultHardwareContext } from "./defaults";
 import type { VaultHardwareContextInterface } from "./types";

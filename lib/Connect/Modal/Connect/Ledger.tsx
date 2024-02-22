@@ -1,5 +1,5 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { faChrome, faUsb } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -11,10 +11,10 @@ import {
   ModalConnectItem,
   ModalHardwareItem,
   Button,
-} from "@polkadot-cloud/react";
-import { inChrome } from "@polkadot-cloud/utils";
-import { Ledger as LedgerIcon } from "@polkadot-cloud/assets/extensions/jsx/Ledger";
-import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
+} from "@polkadot-ui/react";
+import { inChrome } from "@polkadot-ui/utils";
+import { Ledger as LedgerIcon } from "@polkadot-ui/assets/extensions/jsx/Ledger";
+import { useOverlay } from "@polkadot-ui/react/overlay/OverlayProvider/useOverlay";
 import { ReactElement } from "react";
 import { useConnectConfig } from "../../Providers/ConnectConfigProvider";
 

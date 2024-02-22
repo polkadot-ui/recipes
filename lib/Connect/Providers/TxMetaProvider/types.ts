@@ -1,8 +1,8 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import type BigNumber from "bignumber.js";
-import type { AnyJson, MaybeAddress } from "@polkadot-cloud/react/utils/types";
+import type { AnyJson, MaybeAddress } from "@polkadot-ui/react/utils/types";
 
 export interface TxMetaContextInterface {
   controllerSignerAvailable: (

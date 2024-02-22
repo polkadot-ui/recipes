@@ -1,8 +1,8 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import type { LedgerTask } from "../../Providers/HardwareProviders/types";
-import type { AnyJson } from "@polkadot-cloud/react/utils/types";
+import type { AnyJson } from "@polkadot-ui/react/utils/types";
 
 export interface LederLoopProps {
   tasks: LedgerTask[];

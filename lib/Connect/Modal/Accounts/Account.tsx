@@ -1,20 +1,20 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { faGlasses } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ellipsisFn } from "@polkadot-cloud/utils";
+import { ellipsisFn } from "@polkadot-ui/utils";
 
-import { ExtensionIcons } from "@polkadot-cloud/assets/extensions";
-// import LedgerSVG from "@polkadot-cloud/assets/extensions/svg/ledger.svg?react";
-// import PolkadotVaultSVG from "@polkadot-cloud/assets/extensions/svg/polkadotvault.svg?react";
+import { ExtensionIcons } from "@polkadot-ui/assets/extensions";
+// import LedgerSVG from "@polkadot-ui/assets/extensions/svg/ledger.svg?react";
+// import PolkadotVaultSVG from "@polkadot-ui/assets/extensions/svg/polkadotvault.svg?react";
 // import { useTransferOptions } from "contexts/TransferOptions";
 
-import { PolkadotVault } from "@polkadot-cloud/assets/extensions/jsx/PolkadotVault";
-import { Ledger } from "@polkadot-cloud/assets/extensions/jsx/Ledger";
+import { PolkadotVault } from "@polkadot-ui/assets/extensions/jsx/PolkadotVault";
+import { Ledger } from "@polkadot-ui/assets/extensions/jsx/Ledger";
 
-import { Polkicon } from "@polkadot-cloud/react";
-import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
+import { Polkicon } from "@polkadot-ui/react";
+import { useOverlay } from "@polkadot-ui/react/overlay/OverlayProvider/useOverlay";
 import { useImportedAccounts } from "../../Providers/ImportedAccountsProvider";
 
 import type { AccountItemProps } from "./types";

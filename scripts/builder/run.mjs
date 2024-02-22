@@ -1,5 +1,5 @@
-// Copyright 2023 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import minimist from "minimist";
 import * as packages from "./tasks/packages.mjs";

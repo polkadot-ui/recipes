@@ -1,13 +1,13 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import { Button } from "@polkadot-cloud/react";
+import { Button } from "@polkadot-ui/react";
 import { useEffect } from "react";
 import { useLedgerHardware } from "../../Providers/HardwareProviders/Ledger";
-import { Ledger as LogoSVG } from "@polkadot-cloud/assets/extensions/jsx/Ledger";
-import type { AnyFunction } from "@polkadot-cloud/react/utils/types";
-import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
+import { Ledger as LogoSVG } from "@polkadot-ui/assets/extensions/jsx/Ledger";
+import type { AnyFunction } from "@polkadot-ui/react/utils/types";
+import { useOverlay } from "@polkadot-ui/react/overlay/OverlayProvider/useOverlay";
 
 export const Splash = ({ handleLedgerLoop }: AnyFunction) => {
   const {

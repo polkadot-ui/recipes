@@ -1,12 +1,8 @@
 {
-  "name": "@polkadot-cloud/recipes",
-  "license": "GPL-3.0-only",
-  "version": "0.0.8",
+  "name": "@polkadot-ui/recipes",
+  "license": "MIT",
+  "version": "0.1.0",
   "type": "module",
-  "contributors": [
-    "Ross Bulat<ross@parity.io>",
-    "Nikolaos Kontakis<wirednkod@gmail.com>"
-  ],
   "description": "React Components for Polkadot Dapps.",
   "keywords": [
     "Polkadot",
@@ -16,11 +12,11 @@
     "UI"
   ],
   "bugs": {
-    "url": "https://github.com/polkadot-cloud/library/issues"
+    "url": "https://github.com/polkadot-ui/library/issues"
   },
-  "homepage": "https://github.com/polkadot-cloud/library#readme",
+  "homepage": "https://github.com/polkadot-ui/library#readme",
   "scripts": {
-    "build:mock": "node ../../builder/run.mjs -t build -p cloud-recipes -m index.js",
+    "build:mock": "node ../../builder/run.mjs -t build -p ui-recipes -m index.js",
     "prebuild": "node ./scripts/prebuild.mjs",
     "build": "rm -fr dist && tsup && yarn run copy",
     "copy": "cp ./README.npm.md dist/README.npm.md && cp ./README.md dist/README.md && cp ./package.json dist/package.json",
@@ -38,10 +34,10 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@ledgerhq/hw-transport-webhid": "^6.27.20",
-    "@polkadot-cloud/assets": "0.1.35",
-    "@polkadot-cloud/core": "^1.0.49",
-    "@polkadot-cloud/react": "^0.1.138",
-    "@polkadot-cloud/utils": "^0.0.25",
+    "@polkadot-ui/assets": "^0.5.2",
+    "@polkadot-ui/core": "^2.0.2",
+    "@polkadot-ui/react": "^0.5.3",
+    "@polkadot-ui/utils": "^0.4.0",
     "@polkadot/keyring": "^12.6.1",
     "@polkadot/util": "^12.5.1",
     "@polkadot/util-crypto": "^12.5.1",
@@ -63,10 +59,10 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@ledgerhq/hw-transport-webhid": "^6.27.20",
-    "@polkadot-cloud/assets": "0.1.35",
-    "@polkadot-cloud/core": "^1.0.49",
-    "@polkadot-cloud/react": "^0.1.138",
-    "@polkadot-cloud/utils": "^0.0.25",
+    "@polkadot-ui/assets": "^0.5.2",
+    "@polkadot-ui/core": "^2.0.2",
+    "@polkadot-ui/react": "^0.5.3",
+    "@polkadot-ui/utils": "^0.4.0",
     "@polkadot/keyring": "^12.6.1",
     "@polkadot/util": "^12.5.1",
     "@polkadot/util-crypto": "^12.5.1",
@@ -89,10 +85,6 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@ledgerhq/hw-transport-webhid": "^6.27.20",
-    "@polkadot-cloud/assets": "0.3.4",
-    "@polkadot-cloud/core": "1.0.48",
-    "@polkadot-cloud/react": "0.3.8",
-    "@polkadot-cloud/utils": "0.0.25",
     "@polkadot/keyring": "^12.6.1",
     "@polkadot/util": "^12.5.1",
     "@polkadot/util-crypto": "^12.5.1",

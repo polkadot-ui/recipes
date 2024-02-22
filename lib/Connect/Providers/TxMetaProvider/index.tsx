@@ -1,14 +1,14 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
-import { setStateWithRef } from "@polkadot-cloud/utils";
+import { setStateWithRef } from "@polkadot-ui/utils";
 import BigNumber from "bignumber.js";
 import { useState, ReactNode, useContext, createContext, useRef } from "react";
 import { useBonded } from "../BondedProvider";
 // import { useStaking } from "../Staking";
 // import { useTransferOptions } from "../TransferOptions";
-import type { AnyJson, MaybeAddress } from "@polkadot-cloud/react/utils/types";
-import { useEffectIgnoreInitial } from "@polkadot-cloud/react";
+import type { AnyJson, MaybeAddress } from "@polkadot-ui/react/utils/types";
+import { useEffectIgnoreInitial } from "@polkadot-ui/react";
 import { useActiveAccounts } from "../ActiveAccountsProvider";
 import { useImportedAccounts } from "../ImportedAccountsProvider";
 import * as defaults from "./defaults";

@@ -1,28 +1,28 @@
 <br />
 <p align="center">
-  <a href="https://github.com/polkadot-cloud/library">
-    <img alt="polkadot-cloud" title="polkadot-cloud" src="https://raw.githubusercontent.com/polkadot-cloud/library/main/app/public/img/cloud.png" width="80" />
+  <a href="https://github.com/polkadot-ui/library">
+    <img alt="polkadot-ui" title="polkadot-ui" src="https://avatars.githubusercontent.com/u/160409902?s=200&v=4" width="80" />
   </a>
 </p>
 
 <p align="center">
-  <b>Polkadot Cloud</b> is a library and platform <br />
+  <b>Polkadot UI</b> is a library and platform <br />
   for <b>developing</b> and <b>publishing</b> assets for <b>Polkadot dApps</b>.
 </p>
 
 <div align="center">
-<a href="https://polkadot.cloud/overview">📖 Documentation</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/polkadot-cloud/library"">GitHub</a>
+📖 Documentation&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/polkadot-ui/library"">GitHub</a>
 </div>
 
 <hr>
 
-# Polkadot Cloud: Recipes
+# Polkadot UI: Recipes
 
-**Example functional components derived from the Polkadot Cloud library.**
+**Example functional components derived from the Polkadot UI library.**
 
 - Fully functional UI implementations of headless components.
 - Useful combinations of UI components and static assets for Polkadot dApps.
 
 ## License
 
-[GPL-3.0-only](https://spdx.org/licenses/GPL-3.0-only.html)
+[MIT](https://spdx.org/licenses/mit.html)
