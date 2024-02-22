@@ -1,15 +1,15 @@
 {
   "**/*.{js, ts, tsx}": [
-    "/* @license Copyright 2024 @polkadot-cloud/recipes authors & contributors",
-    "SPDX-License-Identifier: GPL-3.0-only */"
+    "/* @license Copyright 2024 @polkadot-ui/recipes authors & contributors",
+    "SPDX-License-Identifier: MIT */"
   ],
   "**/*.scss": [
-    "/* @license Copyright 2024 @polkadot-cloud/recipes authors & contributors",
-    "SPDX-License-Identifier: GPL-3.0-only */"
+    "/* @license Copyright 2024 @polkadot-ui/recipes authors & contributors",
+    "SPDX-License-Identifier: MIT */"
   ],
   "**/*.{cjs, js}": [
-    "// Copyright 2024 @polkadot-cloud/recipes authors & contributors",
-    "// SPDX-License-Identifier: GPL-3.0-only"
+    "// Copyright 2024 @polkadot-ui/recipes authors & contributors",
+    "// SPDX-License-Identifier: MIT"
   ],
   "ignore": ["testdata", "npm"]
 }

@@ -1,5 +1,5 @@
-// Copyright 2023 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import fs from "fs/promises";
 import { join, dirname } from "path";
@@ -61,12 +61,12 @@ export const checkFoldersInDirectory = async (dir, folders) => {
 
 // Formats npm package name from package source folder name.
 export const formatNpmPackageName = (name) => {
-  return `@${PACKAGE_SCOPE}/${removePrefix(name, "cloud-")}`;
+  return `@${PACKAGE_SCOPE}/${removePrefix(name, "ui-")}`;
 };
 
 // Remove a prefix from a string if it exists.
 export const removePrefix = (str, prefix) => {
-  const result = str.startsWith(prefix) ? str.slice("cloud-".length) : str;
+  const result = str.startsWith(prefix) ? str.slice("ui-".length) : str;
   return result;
 };
 

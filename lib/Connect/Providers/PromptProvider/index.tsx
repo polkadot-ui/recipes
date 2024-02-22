@@ -1,10 +1,10 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { useState, ReactNode, createContext, useContext } from "react";
 import { defaultPromptContext } from "./defaults";
 import type { PromptContextInterface } from "./types";
-import { Any } from "@polkadot-cloud/react/utils/types";
+import { Any } from "@polkadot-ui/react/utils/types";
 
 export const PromptProvider = ({ children }: { children: ReactNode }) => {
   const [state, setState] = useState<Any>({

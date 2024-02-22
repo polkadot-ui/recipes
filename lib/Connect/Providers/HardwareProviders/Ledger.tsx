@@ -1,5 +1,5 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import {
   ReactNode,
@@ -12,13 +12,13 @@ import {
 import TransportWebHID from "@ledgerhq/hw-transport-webhid";
 import { newSubstrateApp } from "@zondax/ledger-substrate";
 import { u8aToBuffer } from "@polkadot/util";
-import { localStorageOrDefault, setStateWithRef } from "@polkadot-cloud/utils";
-import type { LedgerAccount } from "@polkadot-cloud/react/connect/types";
+import { localStorageOrDefault, setStateWithRef } from "@polkadot-ui/utils";
+import type { LedgerAccount } from "@polkadot-ui/react/connect/types";
 import type {
   AnyFunction,
   AnyJson,
   MaybeString,
-} from "@polkadot-cloud/react/utils/types";
+} from "@polkadot-ui/react/utils/types";
 import {
   getLocalLedgerAccounts,
   getLocalLedgerAddresses,

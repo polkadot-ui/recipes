@@ -1,5 +1,5 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import {
   faChevronRight,
@@ -7,12 +7,12 @@ import {
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Polkicon } from "@polkadot-cloud/react";
+import { Button, Polkicon } from "@polkadot-ui/react";
 import { AccountInput } from "./AccountInput";
-import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
+import { useOverlay } from "@polkadot-ui/react/overlay/OverlayProvider/useOverlay";
 import { useImportedAccounts } from "../../Providers/ImportedAccountsProvider";
 import { useOtherAccounts } from "../../Providers/OtherAccountsProvider";
-import type { ExternalAccount } from "@polkadot-cloud/react/connect/types";
+import type { ExternalAccount } from "@polkadot-ui/react/connect/types";
 import type { ListWithInputProps } from "./types";
 
 export const ReadOnly = ({ setInputOpen, inputOpen }: ListWithInputProps) => {

@@ -1,17 +1,17 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { VaultHardwareProvider } from "./HardwareProviders/Vault";
 import { LedgerHardwareProvider } from "./HardwareProviders/Ledger";
 import { NotificationsProvider } from "./NotificationsProvider";
-import { ExtensionsProvider } from "@polkadot-cloud/react/connect/ExtensionsProvider";
-import { ExtensionAccountsProvider } from "@polkadot-cloud/react/connect/ExtensionAccountsProvider";
+import { ExtensionsProvider } from "@polkadot-ui/react/connect/ExtensionsProvider";
+import { ExtensionAccountsProvider } from "@polkadot-ui/react/connect/ExtensionAccountsProvider";
 import { OtherAccountsProvider } from "./OtherAccountsProvider";
 import { ImportedAccountsProvider } from "./ImportedAccountsProvider";
 import { HelpProvider } from "./HelpProvider";
 import { PromptProvider } from "./PromptProvider";
 import { ConnectType, DappInfo } from "./ConnectConfigProvider/types";
-import { OverlayProvider } from "@polkadot-cloud/react/overlay/OverlayProvider";
+import { OverlayProvider } from "@polkadot-ui/react/overlay/OverlayProvider";
 import {
   ActiveAccountsProvider,
   useActiveAccounts,

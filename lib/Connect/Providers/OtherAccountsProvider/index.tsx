@@ -1,29 +1,26 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import type { ReactNode } from "react";
 import { createContext, useContext, useEffect, useRef, useState } from "react";
-import { useEffectIgnoreInitial } from "@polkadot-cloud/react";
+import { useEffectIgnoreInitial } from "@polkadot-ui/react";
 
-import { useExtensions } from "@polkadot-cloud/react/connect/ExtensionsProvider/useExtensions";
-import { useExtensionAccounts } from "@polkadot-cloud/react/connect/ExtensionAccountsProvider/useExtensionAccounts";
+import { useExtensions } from "@polkadot-ui/react/connect/ExtensionsProvider/useExtensions";
+import { useExtensionAccounts } from "@polkadot-ui/react/connect/ExtensionAccountsProvider/useExtensionAccounts";
 
 import {
   getLocalLedgerAccounts,
   getLocalVaultAccounts,
 } from "../HardwareProviders/Utils";
-import type {
-  AnyFunction,
-  MaybeAddress,
-} from "@polkadot-cloud/react/utils/types";
+import type { AnyFunction, MaybeAddress } from "@polkadot-ui/react/utils/types";
 import type { NetworkName } from "../../Utils";
-import { ellipsisFn, setStateWithRef } from "@polkadot-cloud/utils";
+import { ellipsisFn, setStateWithRef } from "@polkadot-ui/utils";
 import Keyring from "@polkadot/keyring";
 import type {
   ExternalAccount,
   ExternalAccountAddedBy,
   ImportedAccount,
-} from "@polkadot-cloud/react/connect/types";
+} from "@polkadot-ui/react/connect/types";
 import {
   getActiveAccountLocal,
   getLocalExternalAccounts,

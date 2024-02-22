@@ -1,12 +1,12 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Polkicon } from "@polkadot-cloud/react";
-import { isValidAddress } from "@polkadot-cloud/utils";
+import { Button, Polkicon } from "@polkadot-ui/react";
+import { isValidAddress } from "@polkadot-ui/utils";
 import { FormEvent, useEffect, useState } from "react";
-import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
+import { useOverlay } from "@polkadot-ui/react/overlay/OverlayProvider/useOverlay";
 import { useImportedAccounts } from "../../../Providers/ImportedAccountsProvider";
 import { formatAccountSs58 } from "../../../Utils";
 import type { AccountInputProps } from "./types";

@@ -1,10 +1,10 @@
-// Copyright 2023 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 // ----------------------------
 // Package scope to publish to.
 // ----------------------------
-export const PACKAGE_SCOPE = "polkadot-cloud";
+export const PACKAGE_SCOPE = "polkadot-ui";
 
 // ----------------------------
 // Package build output folder.

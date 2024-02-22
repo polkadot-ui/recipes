@@ -1,6 +1,6 @@
 # Contribution Guide
 
-This section aims to familiarise developers with Polkadot Cloud for the purpose of contributing to the project.
+This section aims to familiarise developers with Polkadot UI for the purpose of contributing to the project.
 
 Reach out to ross@parity.io or wirednkod@gmail.com for clarification of any content within this document.
 

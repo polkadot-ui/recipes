@@ -1,10 +1,10 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import type { ReactNode } from "react";
 import { createContext, useContext, useEffect, useRef, useState } from "react";
-import type { MaybeAddress } from "@polkadot-cloud/react/utils/types";
-import { setStateWithRef } from "@polkadot-cloud/utils";
+import type { MaybeAddress } from "@polkadot-ui/react/utils/types";
+import { setStateWithRef } from "@polkadot-ui/utils";
 import type { ActiveAccountsContextInterface, ActiveProxy } from "./types";
 import { defaultActiveAccountsContext } from "./defaults";
 import { useConnectConfig } from "../ConnectConfigProvider";

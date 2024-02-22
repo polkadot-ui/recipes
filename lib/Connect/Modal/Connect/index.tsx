@@ -1,5 +1,5 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -11,15 +11,15 @@ import {
   ModalSection,
   ModalCustomHeader,
   useEffectIgnoreInitial,
-} from "@polkadot-cloud/react";
+} from "@polkadot-ui/react";
 
-import { ExtensionsArray } from "@polkadot-cloud/assets/extensions";
+import { ExtensionsArray } from "@polkadot-ui/assets/extensions";
 import { useEffect, useRef, useState } from "react";
-import { useExtensions } from "@polkadot-cloud/react/connect/ExtensionsProvider/useExtensions";
-import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
+import { useExtensions } from "@polkadot-ui/react/connect/ExtensionsProvider/useExtensions";
+import { useOverlay } from "@polkadot-ui/react/overlay/OverlayProvider/useOverlay";
 
 import { SelectItems } from "./SelectItems";
-import type { AnyFunction } from "@polkadot-cloud/react/utils/types";
+import type { AnyFunction } from "@polkadot-ui/react/utils/types";
 import { Extension } from "./Extension";
 import { Ledger } from "./Ledger";
 import { Proxies } from "./Proxies";

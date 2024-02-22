@@ -1,5 +1,5 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { faChevronLeft, faLinkSlash } from "@fortawesome/free-solid-svg-icons";
 // import {
@@ -8,7 +8,7 @@ import { faChevronLeft, faLinkSlash } from "@fortawesome/free-solid-svg-icons";
 //   ButtonText,
 //   ModalCustomHeader,
 //   ModalPadding,
-// } from "@polkadot-cloud/react";
+// } from "@polkadot-ui/react";
 import { Fragment, useEffect, useState } from "react";
 
 import {
@@ -17,14 +17,14 @@ import {
   ModalPadding,
   ModalCustomHeader,
   Button,
-} from "@polkadot-cloud/react";
+} from "@polkadot-ui/react";
 
 // TODO: No idea what to do
 // import { useBalances } from "contexts/Balances";
 // import { useBonded } from "contexts/Bonded";
 
-import { useOverlay } from "@polkadot-cloud/react/overlay/OverlayProvider/useOverlay";
-import { useExtensions } from "@polkadot-cloud/react/connect/ExtensionsProvider/useExtensions";
+import { useOverlay } from "@polkadot-ui/react/overlay/OverlayProvider/useOverlay";
+import { useExtensions } from "@polkadot-ui/react/connect/ExtensionsProvider/useExtensions";
 
 // import { usePoolMemberships } from "contexts/Pools/PoolMemberships";
 import { useProxies } from "../../Providers/ProxiesProvider";

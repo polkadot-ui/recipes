@@ -1,5 +1,5 @@
-// Copyright 2024 @polkadot-cloud/recipes authors & contributors
-// SPDX-License-Identifier: GPL-3.0-only
+// Copyright 2024 @polkadot-ui/recipes authors & contributors
+// SPDX-License-Identifier: MIT
 
 import { faCircle } from "@fortawesome/free-regular-svg-icons";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";

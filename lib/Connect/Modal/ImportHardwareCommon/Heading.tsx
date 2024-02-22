@@ -1,12 +1,12 @@
-/* @license Copyright 2024 @polkadot-cloud/recipes authors & contributors
-SPDX-License-Identifier: GPL-3.0-only */
+/* @license Copyright 2024 @polkadot-ui/recipes authors & contributors
+SPDX-License-Identifier: MIT */
 
 import {
   faChevronRight,
   faCircleMinus,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button } from "@polkadot-cloud/react";
+import { Button } from "@polkadot-ui/react";
 import type { HeadingProps } from "./types";
 
 export const Heading = ({
