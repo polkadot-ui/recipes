@@ -12,10 +12,7 @@ import {
   getLocalLedgerAccounts,
   getLocalVaultAccounts,
 } from "../HardwareProviders/Utils";
-import type {
-  AnyFunction,
-  MaybeAddress,
-} from "@polkadot-ui/react/utils/types";
+import type { AnyFunction, MaybeAddress } from "@polkadot-ui/react/utils/types";
 import type { NetworkName } from "../../Utils";
 import { ellipsisFn, setStateWithRef } from "@polkadot-ui/utils";
 import Keyring from "@polkadot/keyring";
