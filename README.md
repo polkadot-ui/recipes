@@ -1,4 +1,5 @@
-[![Recipes - Package](https://img.shields.io/badge/Core&nbsp;React-Package-E6007A?logo=polkadot =E6007A)](https://github.com/polkadot-ui/library) ![ci](https://github.com/polkadot-ui/library/actions/workflows/main.yml/badge.svg) [![License](https://img.shields.io/badge/mit.svg)](https://opensource.org/license/mit/)
+[![Recipes - Package](https://img.shields.io/badge/Recipes-Package-E6007A?logo=polkadot =E6007A)](https://github.com/polkadot-ui/recipes) ![ci](https://github.com/polkadot-ui/recipes/actions/workflows/main.yml/badge.svg) [![License](https://img.shields.io/github/license/polkadot-ui/library
+)](https://opensource.org/license/mit/)
 
 # Polkadot UI: Recipes
 
