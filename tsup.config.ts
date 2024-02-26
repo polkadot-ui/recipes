@@ -6,7 +6,10 @@ import { sassPlugin } from "esbuild-sass-plugin";
 
 export default defineConfig({
   esbuildPlugins: [sassPlugin()],
-  entry: ["lib/index.tsx"],
+  entry: [
+    "lib/AccountCard/index.tsx",
+    "lib/Connect/index.tsx"
+  ],
   treeshake: true,
   splitting: true,
   sourcemap: false,
